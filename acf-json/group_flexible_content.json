@@ -1,0 +1,4127 @@
+{
+  "key": "group_flexible_content",
+  "title": "Page Builder",
+  "fields": [
+    {
+      "key": "field_cms",
+      "label": "Content Sections",
+      "name": "cms",
+      "aria-label": "",
+      "type": "flexible_content",
+      "instructions": "Build your page by adding and arranging content sections below. Each section is a modular layout component that you can customize independently. Drag sections to reorder them, and use the collapse/expand controls to manage your workspace efficiently. <strong>Note:</strong> When using the Page Builder, the standard WordPress content editor is hidden and the 'Show Page Title' setting in the sidebar is ignored.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layouts": {
+        "layout_hero_section": {
+          "key": "layout_hero_section",
+          "name": "hero_section",
+          "label": "Hero Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_hero_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_hero_title",
+              "label": "Hero Title",
+              "name": "hero_title",
+              "aria-label": "",
+              "type": "textarea",
+              "instructions": "Enter the main heading for the hero section. Use line breaks if needed.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "rows": 3,
+              "placeholder": "A/Prof Simon Tsao",
+              "new_lines": "br"
+            },
+            {
+              "key": "field_hero_kicker",
+              "label": "Hero Kicker",
+              "name": "hero_kicker",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the supporting line below the title.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Doctor | Surgeon | Researcher",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_hero_summary",
+              "label": "Hero Summary",
+              "name": "hero_summary",
+              "aria-label": "",
+              "type": "textarea",
+              "instructions": "Enter the summary text for the hero section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "rows": 5,
+              "placeholder": "A/Prof Simon Tsao is currently positioned at leading Melbourne hospitals, specialising in Breast and Endocrine Surgery.",
+              "new_lines": "br"
+            },
+            {
+              "key": "field_hero_tab_media",
+              "label": "Media",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_hero_background_image",
+              "label": "Background Image",
+              "name": "hero_background_image",
+              "aria-label": "",
+              "type": "image",
+              "instructions": "Upload the hero background image.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "return_format": "array",
+              "library": "all",
+              "min_width": "",
+              "min_height": "",
+              "min_size": "",
+              "max_width": "",
+              "max_height": "",
+              "max_size": "",
+              "mime_types": "",
+              "preview_size": "medium"
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_inner_hero": {
+          "key": "layout_inner_hero",
+          "name": "inner_hero",
+          "label": "Inner Hero",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_inner_hero_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_inner_hero_title",
+              "label": "Hero Title",
+              "name": "hero_title",
+              "aria-label": "",
+              "type": "textarea",
+              "instructions": "Enter the main heading for the inner hero section. Use line breaks if needed.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "rows": 3,
+              "placeholder": "Breast Conditions",
+              "new_lines": "br"
+            },
+            {
+              "key": "field_inner_hero_summary",
+              "label": "Hero Summary",
+              "name": "hero_summary",
+              "aria-label": "",
+              "type": "textarea",
+              "instructions": "Optional supporting summary. Leave empty for the simple title-only hero style.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "rows": 6,
+              "placeholder": "Embarking on a medical journey can be both daunting and hopeful.",
+              "new_lines": "wpautop"
+            },
+            {
+              "key": "field_inner_hero_show_title_surface",
+              "label": "Show Title Surface",
+              "name": "show_title_surface",
+              "aria-label": "",
+              "type": "true_false",
+              "instructions": "Enable the translucent white title background used on pages like Breast Conditions and Research.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "message": "",
+              "default_value": 1,
+              "ui": 1,
+              "ui_on_text": "Shown",
+              "ui_off_text": "Hidden"
+            },
+            {
+              "key": "field_inner_hero_tab_media",
+              "label": "Media",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_inner_hero_background_image",
+              "label": "Background Image",
+              "name": "background_image",
+              "aria-label": "",
+              "type": "image",
+              "instructions": "Upload the desktop hero background image.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "return_format": "array",
+              "library": "all",
+              "min_width": "",
+              "min_height": "",
+              "min_size": "",
+              "max_width": "",
+              "max_height": "",
+              "max_size": "",
+              "mime_types": "",
+              "preview_size": "medium"
+            },
+            {
+              "key": "field_inner_hero_mobile_background_image",
+              "label": "Mobile Background Image",
+              "name": "mobile_background_image",
+              "aria-label": "",
+              "type": "image",
+              "instructions": "Optional mobile-specific background image.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "return_format": "array",
+              "library": "all",
+              "min_width": "",
+              "min_height": "",
+              "min_size": "",
+              "max_width": "",
+              "max_height": "",
+              "max_size": "",
+              "mime_types": "",
+              "preview_size": "medium"
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_overview_section": {
+          "key": "layout_overview_section",
+          "name": "overview_section",
+          "label": "Overview Section (Left Image + Right Content)",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_overview_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_overview_section_link",
+              "label": "Section Link",
+              "name": "section_link",
+              "aria-label": "",
+              "type": "link",
+              "instructions": "Optional linked title shown above the section content.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "return_format": "array"
+            },
+            {
+              "key": "field_overview_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the main heading for the section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Breast Cancer",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_overview_highlight_text",
+              "label": "Highlight Text",
+              "name": "highlight_text",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Optional highlighted summary line shown beneath the heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_overview_body_content",
+              "label": "Body Content",
+              "name": "body_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Add the main body content for the section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_overview_supporting_links_content",
+              "label": "Supporting Links Content",
+              "name": "supporting_links_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Optional supporting sentence or links shown below the main copy.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "visual",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_overview_journey_callout_group",
+              "label": "Journey Callout",
+              "name": "journey_callout_group",
+              "aria-label": "",
+              "type": "group",
+              "instructions": "Used on the Breast Cancer Overview, but you can also use this optional callout in any Overview Section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "layout": "block",
+              "sub_fields": [
+                {
+                  "key": "field_overview_journey_icon",
+                  "label": "Journey Icon",
+                  "name": "journey_icon",
+                  "aria-label": "",
+                  "type": "image",
+                  "instructions": "Optional icon used in the secondary callout row.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                  },
+                  "return_format": "array",
+                  "library": "all",
+                  "min_width": "",
+                  "min_height": "",
+                  "min_size": "",
+                  "max_width": "",
+                  "max_height": "",
+                  "max_size": "",
+                  "mime_types": "",
+                  "preview_size": "thumbnail"
+                },
+                {
+                  "key": "field_overview_journey_callout_content",
+                  "label": "Journey Callout Content",
+                  "name": "journey_callout_content",
+                  "aria-label": "",
+                  "type": "wysiwyg",
+                  "instructions": "Optional secondary callout content shown beside the journey icon.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "tabs": "visual",
+                  "toolbar": "basic",
+                  "media_upload": 0,
+                  "delay": 0
+                }
+              ]
+            },
+            {
+              "key": "field_overview_tab_additional_links",
+              "label": "Additional Links",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_overview_use_shared_links",
+              "label": "Additional Links Source",
+              "name": "use_shared_links",
+              "aria-label": "",
+              "type": "true_false",
+              "instructions": "Choose how this section should load its additional links. If Shared is selected, the links will come from Site Settings > Additional Information Links.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "message": "",
+              "default_value": 0,
+              "ui_on_text": "Shared",
+              "ui_off_text": "Manual",
+              "ui": 1
+            },
+            {
+              "key": "field_overview_information_group_heading",
+              "label": "Information Group Heading",
+              "name": "information_group_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Heading for the information links group when shared links are turned off.",
+              "required": 0,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_overview_use_shared_links",
+                    "operator": "!=",
+                    "value": "1"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Breast Information",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_overview_surgeries_group_heading",
+              "label": "Surgeries Group Heading",
+              "name": "surgeries_group_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Heading for the surgeries links group when shared links are turned off.",
+              "required": 0,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_overview_use_shared_links",
+                    "operator": "!=",
+                    "value": "1"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Breast Surgeries",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_overview_information_links",
+              "label": "Information Links",
+              "name": "information_links",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add links for the information list when shared links are turned off.",
+              "required": 0,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_overview_use_shared_links",
+                    "operator": "!=",
+                    "value": "1"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "layout": "table",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "",
+              "button_label": "Add Link",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_overview_information_link",
+                  "label": "Link",
+                  "name": "link",
+                  "aria-label": "",
+                  "type": "link",
+                  "instructions": "",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "return_format": "array",
+                  "parent_repeater": "field_overview_information_links"
+                }
+              ]
+            },
+            {
+              "key": "field_overview_surgeries_links",
+              "label": "Surgeries Links",
+              "name": "surgeries_links",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add links for the surgeries list when shared links are turned off.",
+              "required": 0,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_overview_use_shared_links",
+                    "operator": "!=",
+                    "value": "1"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "layout": "table",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "",
+              "button_label": "Add Link",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_overview_surgery_link",
+                  "label": "Link",
+                  "name": "link",
+                  "aria-label": "",
+                  "type": "link",
+                  "instructions": "",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "return_format": "array",
+                  "parent_repeater": "field_overview_surgeries_links"
+                }
+              ]
+            },
+            {
+              "key": "field_overview_tab_media",
+              "label": "Media",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_overview_section_image",
+              "label": "Section Image",
+              "name": "section_image",
+              "aria-label": "",
+              "type": "image",
+              "instructions": "Optional image shown on the left. Leave empty to render this section as full-width content.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "return_format": "array",
+              "library": "all",
+              "min_width": "",
+              "min_height": "",
+              "min_size": "",
+              "max_width": "",
+              "max_height": "",
+              "max_size": "",
+              "mime_types": "",
+              "preview_size": "medium"
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_media_content_section": {
+          "key": "layout_media_content_section",
+          "name": "media_content_section",
+          "label": "Media + Content Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_media_content_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_media_content_section_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the main section heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Medical and Cancer Research",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_media_content_items",
+              "label": "Content Blocks",
+              "name": "content_blocks",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add one or more heading and content blocks for this section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "layout": "block",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "field_media_content_item_heading",
+              "button_label": "Add Content Block",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_media_content_item_heading",
+                  "label": "Heading",
+                  "name": "heading",
+                  "aria-label": "",
+                  "type": "text",
+                  "instructions": "Optional heading for this content block.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "placeholder": "Innovative Cancer Research and Breakthroughs",
+                  "prepend": "",
+                  "append": ""
+                },
+                {
+                  "key": "field_media_content_item_body",
+                  "label": "Content",
+                  "name": "content",
+                  "aria-label": "",
+                  "type": "wysiwyg",
+                  "instructions": "Add the content for this block.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "tabs": "all",
+                  "toolbar": "basic",
+                  "media_upload": 0,
+                  "delay": 0
+                }
+              ]
+            },
+            {
+              "key": "field_media_content_supporting_links",
+              "label": "Supporting Links Content",
+              "name": "supporting_links_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Optional closing sentence with links.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_media_content_tab_layout",
+              "label": "Layout",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_media_content_media_position",
+              "label": "Media Position",
+              "name": "media_position",
+              "aria-label": "",
+              "type": "button_group",
+              "instructions": "Choose whether the media appears on the left or right.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "choices": {
+                "left": "Left",
+                "right": "Right"
+              },
+              "default_value": "left",
+              "return_format": "value",
+              "layout": "horizontal"
+            },
+            {
+              "key": "field_media_content_add_divider",
+              "label": "Bottom Divider",
+              "name": "add_divider",
+              "aria-label": "",
+              "type": "true_false",
+              "instructions": "Enable the bottom divider line used in some sections.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "message": "",
+              "default_value": 0,
+              "ui": 1,
+              "ui_on_text": "Shown",
+              "ui_off_text": "Hidden"
+            },
+            {
+              "key": "field_media_content_tab_media",
+              "label": "Media",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_media_content_image",
+              "label": "Image",
+              "name": "image",
+              "aria-label": "",
+              "type": "image",
+              "instructions": "Upload the image for this section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "return_format": "array",
+              "library": "all",
+              "min_width": "",
+              "min_height": "",
+              "min_size": "",
+              "max_width": "",
+              "max_height": "",
+              "max_size": "",
+              "mime_types": "",
+              "preview_size": "medium"
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_request_appointment": {
+          "key": "layout_request_appointment",
+          "name": "request_appointment",
+          "label": "Request Appointment",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_request_appointment_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_request_appointment_button_text",
+              "label": "Button Text",
+              "name": "button_text",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Optional. If filled, the form is hidden until the button is clicked. If left empty, the form is shown by default.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Request an Urgent Appointment",
+              "maxlength": "",
+              "placeholder": "Request an Urgent Appointment",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_request_appointment_form_embed_code",
+              "label": "Form Embed Code",
+              "name": "form_embed_code",
+              "aria-label": "",
+              "type": "textarea",
+              "instructions": "Paste a plugin shortcode or third-party CRM embed code. This field is intended for raw form output such as shortcodes, iframe embeds, or vendor embed snippets.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "rows": 8,
+              "placeholder": "[gravityform id=\"1\" title=\"false\" description=\"false\"]",
+              "new_lines": ""
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_additional_information_links": {
+          "key": "layout_additional_information_links",
+          "name": "additional_information_links",
+          "label": "Additional Information Links",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_additional_links_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_additional_links_section_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the section heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "Links to Additional Information",
+              "maxlength": "",
+              "placeholder": "Links to Additional Information",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_additional_links_tab_media",
+              "label": "Media",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_additional_links_section_image",
+              "label": "Section Image",
+              "name": "section_image",
+              "aria-label": "",
+              "type": "image",
+              "instructions": "Upload the image for this Links to Additional Information section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "return_format": "array",
+              "library": "all",
+              "min_width": "",
+              "min_height": "",
+              "min_size": "",
+              "max_width": "",
+              "max_height": "",
+              "max_size": "",
+              "mime_types": "",
+              "preview_size": "medium"
+            },
+            {
+              "key": "field_additional_links_tab_links",
+              "label": "Additional Links",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_additional_links_use_shared_links",
+              "label": "Additional Links Source",
+              "name": "use_shared_links",
+              "aria-label": "",
+              "type": "true_false",
+              "instructions": "Choose how this section should load its additional links. If Shared is selected, the links will come from Site Settings > Additional Information Links.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "message": "",
+              "default_value": 1,
+              "ui_on_text": "Shared",
+              "ui_off_text": "Manual",
+              "ui": 1
+            },
+            {
+              "key": "field_additional_links_information_group_heading",
+              "label": "Information Group Heading",
+              "name": "information_group_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the heading for the information links group. This is used only when shared links are turned off.",
+              "required": 0,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_additional_links_use_shared_links",
+                    "operator": "!=",
+                    "value": "1"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Breast Information",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_additional_links_surgeries_group_heading",
+              "label": "Surgeries Group Heading",
+              "name": "surgeries_group_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the heading for the surgeries links group. This is used only when shared links are turned off.",
+              "required": 0,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_additional_links_use_shared_links",
+                    "operator": "!=",
+                    "value": "1"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Breast Surgeries",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_additional_links_information_links",
+              "label": "Information Links",
+              "name": "information_links",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add links for the information list. These are used only when shared links are turned off.",
+              "required": 0,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_additional_links_use_shared_links",
+                    "operator": "!=",
+                    "value": "1"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "layout": "table",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "",
+              "button_label": "Add Link",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_additional_links_information_link",
+                  "label": "Link",
+                  "name": "link",
+                  "aria-label": "",
+                  "type": "link",
+                  "instructions": "",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "return_format": "array",
+                  "parent_repeater": "field_additional_links_information_links"
+                }
+              ]
+            },
+            {
+              "key": "field_additional_links_surgeries_links",
+              "label": "Surgeries Links",
+              "name": "surgeries_links",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add links for the surgeries list. These are used only when shared links are turned off.",
+              "required": 0,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_additional_links_use_shared_links",
+                    "operator": "!=",
+                    "value": "1"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "layout": "table",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "",
+              "button_label": "Add Link",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_additional_links_surgery_link",
+                  "label": "Link",
+                  "name": "link",
+                  "aria-label": "",
+                  "type": "link",
+                  "instructions": "",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "return_format": "array",
+                  "parent_repeater": "field_additional_links_surgeries_links"
+                }
+              ]
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_about_specialist_intro": {
+          "key": "layout_about_specialist_intro",
+          "name": "about_specialist_intro",
+          "label": "About Specialist Intro",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_about_specialist_intro_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_about_specialist_intro_main_heading",
+              "label": "Main Heading",
+              "name": "main_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the main page heading for this section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "A/Prof Simon Tsao",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_about_specialist_intro_subheading",
+              "label": "Subheading",
+              "name": "subheading",
+              "aria-label": "",
+              "type": "textarea",
+              "instructions": "Enter the professional descriptor shown below the main heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "rows": 2,
+              "placeholder": "Australian Trained Breast, Endocrine and General Surgeon",
+              "new_lines": "br"
+            },
+            {
+              "key": "field_about_specialist_intro_highlight_text",
+              "label": "Highlight Text",
+              "name": "highlight_text",
+              "aria-label": "",
+              "type": "textarea",
+              "instructions": "Enter the highlighted introductory summary.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "rows": 3,
+              "placeholder": "Associate Professor Simon Tsao brings a wealth of experience and a commitment to personalized care as an Australian trained Specialist in Breast, Endocrine, and General surgery.",
+              "new_lines": "br"
+            },
+            {
+              "key": "field_about_specialist_intro_specialist_heading",
+              "label": "Specialist Heading",
+              "name": "specialist_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the first supporting heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Leading Breast and Endocrine Specialist",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_about_specialist_intro_specialist_content",
+              "label": "Specialist Content",
+              "name": "specialist_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Add the paragraph content below the first supporting heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_about_specialist_intro_expertise_heading",
+              "label": "Expertise Heading",
+              "name": "expertise_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the second supporting heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Comprehensive Surgical Expertise",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_about_specialist_intro_expertise_content",
+              "label": "Expertise Content",
+              "name": "expertise_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Add the paragraph content below the second supporting heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_about_specialist_intro_supporting_links_content",
+              "label": "Supporting Links Content",
+              "name": "supporting_links_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Add the closing sentence with links.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "full",
+              "media_upload": 1,
+              "delay": 0
+            },
+            {
+              "key": "field_about_specialist_intro_tab_media",
+              "label": "Media",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_about_specialist_intro_profile_image",
+              "label": "Profile Image",
+              "name": "profile_image",
+              "aria-label": "",
+              "type": "image",
+              "instructions": "Upload the portrait image shown beside the content.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "return_format": "array",
+              "library": "all",
+              "min_width": "",
+              "min_height": "",
+              "min_size": "",
+              "max_width": "",
+              "max_height": "",
+              "max_size": "",
+              "mime_types": "",
+              "preview_size": "medium"
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_about_affiliations": {
+          "key": "layout_about_affiliations",
+          "name": "about_affiliations",
+          "label": "About Affiliations",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_about_affiliations_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_about_affiliations_section_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the main section heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Affiliations",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_about_affiliations_australian_heading",
+              "label": "Australian Heading",
+              "name": "australian_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the heading for the Australian affiliations group.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Australian affiliations:",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_about_affiliations_australian_items",
+              "label": "Australian Items",
+              "name": "australian_items",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add the Australian affiliation logos and links.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "layout": "block",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "field_about_affiliations_australian_item_link",
+              "button_label": "Add Australian Affiliation",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_about_affiliations_australian_item_link",
+                  "label": "Link",
+                  "name": "link",
+                  "aria-label": "",
+                  "type": "url",
+                  "instructions": "Enter the external URL for this logo.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "placeholder": "https://example.com",
+                  "parent_repeater": "field_about_affiliations_australian_items"
+                },
+                {
+                  "key": "field_about_affiliations_australian_item_image",
+                  "label": "Image",
+                  "name": "image",
+                  "aria-label": "",
+                  "type": "image",
+                  "instructions": "Upload the affiliation logo.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                  },
+                  "return_format": "array",
+                  "library": "all",
+                  "min_width": "",
+                  "min_height": "",
+                  "min_size": "",
+                  "max_width": "",
+                  "max_height": "",
+                  "max_size": "",
+                  "mime_types": "",
+                  "preview_size": "medium",
+                  "parent_repeater": "field_about_affiliations_australian_items"
+                }
+              ]
+            },
+            {
+              "key": "field_about_affiliations_international_heading",
+              "label": "International Heading",
+              "name": "international_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the heading for the international affiliations group.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "International affiliations:",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_about_affiliations_international_items",
+              "label": "International Items",
+              "name": "international_items",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add the international affiliation logos and links.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "layout": "block",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "field_about_affiliations_international_item_link",
+              "button_label": "Add International Affiliation",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_about_affiliations_international_item_link",
+                  "label": "Link",
+                  "name": "link",
+                  "aria-label": "",
+                  "type": "url",
+                  "instructions": "Enter the external URL for this logo.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "placeholder": "https://example.com",
+                  "parent_repeater": "field_about_affiliations_international_items"
+                },
+                {
+                  "key": "field_about_affiliations_international_item_image",
+                  "label": "Image",
+                  "name": "image",
+                  "aria-label": "",
+                  "type": "image",
+                  "instructions": "Upload the affiliation logo.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                  },
+                  "return_format": "array",
+                  "library": "all",
+                  "min_width": "",
+                  "min_height": "",
+                  "min_size": "",
+                  "max_width": "",
+                  "max_height": "",
+                  "max_size": "",
+                  "mime_types": "",
+                  "preview_size": "medium",
+                  "parent_repeater": "field_about_affiliations_international_items"
+                }
+              ]
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_full_width_content_section": {
+          "key": "layout_full_width_content_section",
+          "name": "full_width_content_section",
+          "label": "Full Width Content Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_full_width_content_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_full_width_content_main_heading",
+              "label": "Main Heading",
+              "name": "main_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Optional main heading shown above the section content.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Breast Conditions \u2014 Benign, Pre-Cancerous & Cancerous",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_full_width_content_first_heading",
+              "label": "Section Heading",
+              "name": "first_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the section heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Understanding Breast Conditions",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_full_width_content_callout_type",
+              "label": "Callout Type",
+              "name": "callout_type",
+              "aria-label": "",
+              "type": "button_group",
+              "instructions": "Choose which type of introductory callout this section should use. Simple Intro Text is the standard option for most sections. Rich Callout With Links is only for bordered callouts that need links, emphasis, or multiple paragraphs.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "choices": {
+                "simple_intro_text": "Simple Intro Text",
+                "rich_callout": "Rich Callout With Links"
+              },
+              "default_value": "simple_intro_text",
+              "return_format": "value",
+              "layout": "horizontal"
+            },
+            {
+              "key": "field_full_width_content_first_highlight_text",
+              "label": "Simple Intro Text",
+              "name": "first_highlight_text",
+              "aria-label": "",
+              "type": "textarea",
+              "instructions": "Enter a short plain-text introductory line shown below the heading. Use this for standard sections without links or multi-paragraph callouts.",
+              "required": 0,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_full_width_content_callout_type",
+                    "operator": "==",
+                    "value": "simple_intro_text"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "rows": 3,
+              "placeholder": "A/Prof Tsao has authored or co-authored a range of high impact journal publications in the fields of cancer research, liquid biopsy, extracellular vesicle detection and surgical outcomes.",
+              "new_lines": "br"
+            },
+            {
+              "key": "field_full_width_content_rich_callout_content",
+              "label": "Linked / Rich Callout",
+              "name": "rich_callout_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Enter the full bordered callout content shown below the heading. Use this only when the callout needs links, emphasis, or multiple paragraphs in the same bordered block.",
+              "required": 0,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_full_width_content_callout_type",
+                    "operator": "==",
+                    "value": "rich_callout"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_full_width_content_first_intro_text_style",
+              "label": "Simple Intro Style",
+              "name": "first_intro_text_style",
+              "aria-label": "",
+              "type": "button_group",
+              "instructions": "Choose how the Simple Intro Text is displayed. Highlighted Text uses the pink left-border callout style. Intro Text uses H5 styling for a softer introductory line.",
+              "required": 0,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_full_width_content_callout_type",
+                    "operator": "==",
+                    "value": "simple_intro_text"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "choices": {
+                "highlighted_text": "Highlighted Text",
+                "intro_text": "Intro Text"
+              },
+              "default_value": "highlighted_text",
+              "return_format": "value",
+              "layout": "horizontal"
+            },
+            {
+              "key": "field_full_width_content_first_content",
+              "label": "Body Content",
+              "name": "first_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Add the main body content for this section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_full_width_content_second_content",
+              "label": "Secondary Content",
+              "name": "second_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Optional secondary full-width content shown below the main body content. Use this for long lists or extended reference content such as publications, grants, or resource lists.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_full_width_content_bottom_note",
+              "label": "Bottom Note",
+              "name": "bottom_note",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Optional supporting note shown below the secondary content. Use this for a reference line such as ORCiD, Scopus, or related source links.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_full_width_content_cta_content",
+              "label": "CTA Content",
+              "name": "cta_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Optional final centered call to action shown at the bottom of the section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_centered_intro_section": {
+          "key": "layout_centered_intro_section",
+          "name": "centered_intro_section",
+          "label": "Centered Intro Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_centered_intro_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_centered_intro_main_heading",
+              "label": "Main Heading",
+              "name": "main_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the main heading for this centered intro section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Top Surgery or Gender Masculinisation Surgery",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_centered_intro_text",
+              "label": "Intro Text",
+              "name": "intro_text",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Enter the centered introductory text shown below the heading. Use this for short intro copy with optional inline links.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_cancer_journey_timeline_section": {
+          "key": "layout_cancer_journey_timeline_section",
+          "name": "cancer_journey_timeline_section",
+          "label": "Cancer Journey Timeline Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_cancer_journey_timeline_tab_intro",
+              "label": "Intro",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_cancer_journey_timeline_intro_heading",
+              "label": "Intro Heading",
+              "name": "intro_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the centered heading shown above the cancer journey timeline.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Understanding your journey",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_cancer_journey_timeline_intro_content",
+              "label": "Intro Content",
+              "name": "intro_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Add the introductory copy shown inside the soft background block above the timeline.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_cancer_journey_timeline_tab_stages",
+              "label": "Timeline Stages",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_cancer_journey_timeline_items",
+              "label": "Timeline Items",
+              "name": "timeline_items",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add the cancer journey stages in order. The desktop layout alternates automatically based on item order.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "layout": "block",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "field_cancer_journey_timeline_stage_title",
+              "button_label": "Add Timeline Stage",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_cancer_journey_timeline_stage_title",
+                  "label": "Stage Title",
+                  "name": "stage_title",
+                  "aria-label": "",
+                  "type": "text",
+                  "instructions": "Enter the stage heading shown in the timeline.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "placeholder": "Diagnosis",
+                  "prepend": "",
+                  "append": ""
+                },
+                {
+                  "key": "field_cancer_journey_timeline_stage_image",
+                  "label": "Stage Image",
+                  "name": "stage_image",
+                  "aria-label": "",
+                  "type": "image",
+                  "instructions": "Upload the image shown in this stage of the timeline.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "return_format": "array",
+                  "library": "all",
+                  "min_width": "",
+                  "min_height": "",
+                  "min_size": "",
+                  "max_width": "",
+                  "max_height": "",
+                  "max_size": "",
+                  "mime_types": "",
+                  "preview_size": "medium"
+                },
+                {
+                  "key": "field_cancer_journey_timeline_body_content",
+                  "label": "Body Content",
+                  "name": "body_content",
+                  "aria-label": "",
+                  "type": "wysiwyg",
+                  "instructions": "Add the main copy for this stage.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "tabs": "all",
+                  "toolbar": "basic",
+                  "media_upload": 0,
+                  "delay": 0,
+                  "parent_repeater": "field_cancer_journey_timeline_items"
+                },
+                {
+                  "key": "field_cancer_journey_timeline_reading_heading",
+                  "label": "Optional Reading Heading",
+                  "name": "reading_heading",
+                  "aria-label": "",
+                  "type": "text",
+                  "instructions": "Optional supporting reading heading shown below the stage content.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "placeholder": "Additional Reading",
+                  "prepend": "",
+                  "append": ""
+                },
+                {
+                  "key": "field_cancer_journey_timeline_reading_content",
+                  "label": "Optional Reading Content",
+                  "name": "reading_content",
+                  "aria-label": "",
+                  "type": "wysiwyg",
+                  "instructions": "Optional supporting reading line or link block shown below the stage content.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "tabs": "all",
+                  "toolbar": "basic",
+                  "media_upload": 0,
+                  "delay": 0,
+                  "parent_repeater": "field_cancer_journey_timeline_items"
+                }
+              ]
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_callout_list_section": {
+          "key": "layout_callout_list_section",
+          "name": "callout_list_section",
+          "label": "Callout + List Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_callout_list_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_callout_list_section_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the section heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "When to Seek Help",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_callout_list_highlight_text",
+              "label": "Highlight Text",
+              "name": "highlight_text",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the highlighted callout shown below the heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "If something feels different, it\u2019s worth checking.",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_callout_list_body_content",
+              "label": "Body Content",
+              "name": "body_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Add the body content shown above the list.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_callout_list_items",
+              "label": "List Items",
+              "name": "list_items",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add the bullet items for this section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "layout": "table",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "field_callout_list_item",
+              "button_label": "Add List Item",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_callout_list_item",
+                  "label": "Item",
+                  "name": "item",
+                  "aria-label": "",
+                  "type": "text",
+                  "instructions": "",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "placeholder": "A new lump in the breast or underarm",
+                  "prepend": "",
+                  "append": ""
+                }
+              ]
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_recovery_guide_section": {
+          "key": "layout_recovery_guide_section",
+          "name": "recovery_guide_section",
+          "label": "Recovery Guide Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_recovery_guide_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_recovery_guide_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the main section heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Breast Surgery Recovery Timeline",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_recovery_guide_highlight_text",
+              "label": "Highlight Text",
+              "name": "highlight_text",
+              "aria-label": "",
+              "type": "textarea",
+              "instructions": "Enter the bordered introductory callout shown below the heading. Use this for the short highlighted summary line above the body content.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "rows": 3,
+              "placeholder": "Recovery from breast surgery typically progresses relatively quickly compared to other procedures.",
+              "new_lines": "br"
+            },
+            {
+              "key": "field_recovery_guide_body_content",
+              "label": "Body Content",
+              "name": "body_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Add the introductory paragraph content shown above the grouped guide lists.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_recovery_guide_groups",
+              "label": "Guide Groups",
+              "name": "guide_groups",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add each grouped recovery block in order, such as Post-surgery you can, You should, and Things to avoid.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "layout": "block",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "field_recovery_guide_group_heading",
+              "button_label": "Add Guide Group",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_recovery_guide_group_heading",
+                  "label": "Group Heading",
+                  "name": "group_heading",
+                  "aria-label": "",
+                  "type": "text",
+                  "instructions": "Enter the heading for this group.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "placeholder": "Post-surgery you can:",
+                  "prepend": "",
+                  "append": ""
+                },
+                {
+                  "key": "field_recovery_guide_group_items",
+                  "label": "Group Items",
+                  "name": "group_items",
+                  "aria-label": "",
+                  "type": "repeater",
+                  "instructions": "Add the list items for this group. Lead Text is the bold pink phrase before the dash.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "layout": "table",
+                  "pagination": 0,
+                  "min": 0,
+                  "max": 0,
+                  "collapsed": "field_recovery_guide_item_lead_text",
+                  "button_label": "Add Group Item",
+                  "rows_per_page": 20,
+                  "sub_fields": [
+                    {
+                      "key": "field_recovery_guide_item_lead_text",
+                      "label": "Lead Text",
+                      "name": "lead_text",
+                      "aria-label": "",
+                      "type": "text",
+                      "instructions": "Enter the bold pink lead phrase.",
+                      "required": 0,
+                      "conditional_logic": 0,
+                      "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                      },
+                      "default_value": "",
+                      "maxlength": "",
+                      "placeholder": "Food and eating",
+                      "prepend": "",
+                      "append": ""
+                    },
+                    {
+                      "key": "field_recovery_guide_item_supporting_text",
+                      "label": "Supporting Text",
+                      "name": "supporting_text",
+                      "aria-label": "",
+                      "type": "textarea",
+                      "instructions": "Enter the supporting sentence shown after the lead text.",
+                      "required": 0,
+                      "conditional_logic": 0,
+                      "wrapper": {
+                        "width": "70",
+                        "class": "",
+                        "id": ""
+                      },
+                      "default_value": "",
+                      "maxlength": "",
+                      "rows": 3,
+                      "new_lines": "br"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_full_width_image_highlighted_list_section": {
+          "key": "layout_full_width_image_highlighted_list_section",
+          "name": "full_width_image_highlighted_list_section",
+          "label": "Full Width Image + Highlighted List Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_full_width_highlighted_list_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_full_width_highlighted_list_section_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the main section heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "What is the difference between normal breast surgery and oncoplastic breast surgery?",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_full_width_highlighted_list_body_content",
+              "label": "Body Content",
+              "name": "body_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Add the introductory paragraph content shown below the image.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_full_width_highlighted_list_list_intro",
+              "label": "List Intro",
+              "name": "list_intro",
+              "aria-label": "",
+              "type": "textarea",
+              "instructions": "Enter the short line shown directly above the highlighted list.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "rows": 2,
+              "placeholder": "Broadly speaking, oncoplastic surgery has four difficulty levels:",
+              "new_lines": "br"
+            },
+            {
+              "key": "field_full_width_highlighted_list_items",
+              "label": "List Items",
+              "name": "list_items",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add one highlighted list item per row. Lead Text becomes the pink phrase before the dash.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "layout": "table",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "field_full_width_highlighted_list_item_lead_text",
+              "button_label": "Add List Item",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_full_width_highlighted_list_item_lead_text",
+                  "label": "Lead Text",
+                  "name": "lead_text",
+                  "aria-label": "",
+                  "type": "text",
+                  "instructions": "Enter the pink lead phrase.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "placeholder": "Level 1",
+                  "prepend": "",
+                  "append": ""
+                },
+                {
+                  "key": "field_full_width_highlighted_list_item_supporting_text",
+                  "label": "Supporting Text",
+                  "name": "supporting_text",
+                  "aria-label": "",
+                  "type": "textarea",
+                  "instructions": "Enter the supporting sentence shown after the lead text.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "75",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "rows": 3,
+                  "placeholder": "Involves the simple mobilization of surrounding breast tissue to close the defect.",
+                  "new_lines": "br"
+                }
+              ]
+            },
+            {
+              "key": "field_full_width_highlighted_list_bottom_highlight_note",
+              "label": "Bottom Highlight Note",
+              "name": "bottom_highlight_note",
+              "aria-label": "",
+              "type": "textarea",
+              "instructions": "Enter the final centered note shown inside the pink background box.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "rows": 4,
+              "placeholder": "When selecting the type of surgery, patient preferences for the final breast outlook should be considered.",
+              "new_lines": "br"
+            },
+            {
+              "key": "field_full_width_highlighted_list_tab_media",
+              "label": "Media",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_full_width_highlighted_list_top_image",
+              "label": "Top Image",
+              "name": "top_image",
+              "aria-label": "",
+              "type": "image",
+              "instructions": "Upload the full-width image shown directly below the heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "return_format": "array",
+              "library": "all",
+              "min_width": "",
+              "min_height": "",
+              "min_size": "",
+              "max_width": "",
+              "max_height": "",
+              "max_size": "",
+              "mime_types": "",
+              "preview_size": "medium"
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_reactive_card_content_section": {
+          "key": "layout_reactive_card_content_section",
+          "name": "reactive_card_content_section",
+          "label": "Reactive Card + Content Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_reactive_card_content_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_reactive_card_content_section_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the section heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Understanding Top Surgery",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_reactive_card_content_heading_level",
+              "label": "Heading Level",
+              "name": "heading_level",
+              "aria-label": "",
+              "type": "button_group",
+              "instructions": "Choose the semantic heading level used for this section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "choices": {
+                "h2": "H2",
+                "h3": "H3"
+              },
+              "default_value": "h2",
+              "return_format": "value",
+              "layout": "horizontal"
+            },
+            {
+              "key": "field_reactive_card_content_highlight_text",
+              "label": "Highlight Text",
+              "name": "highlight_text",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Optional highlighted callout shown above the main body content.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "A patient's weight is not a limiting factor for undergoing surgery, however, there are a few considerations for all patients wishing to undergo top surgery.",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_reactive_card_content_body_content",
+              "label": "Body Content",
+              "name": "body_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Add the main body content. Use this rich text area for paragraphs and any styled lists needed in the section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_reactive_card_content_bottom_note",
+              "label": "Bottom Note",
+              "name": "bottom_note",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Optional note shown below the main content, such as a highlighted final sentence.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_reactive_card_content_tab_card",
+              "label": "Card",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_reactive_card_content_card_image",
+              "label": "Card Image",
+              "name": "card_image",
+              "aria-label": "",
+              "type": "image",
+              "instructions": "Upload the image used as the reactive card background.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "return_format": "array",
+              "library": "all",
+              "min_width": "",
+              "min_height": "",
+              "min_size": "",
+              "max_width": "",
+              "max_height": "",
+              "max_size": "",
+              "mime_types": "",
+              "preview_size": "medium"
+            },
+            {
+              "key": "field_reactive_card_content_card_position",
+              "label": "Card Position",
+              "name": "card_position",
+              "aria-label": "",
+              "type": "button_group",
+              "instructions": "Choose whether the reactive card appears on the left or right.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "choices": {
+                "left": "Left",
+                "right": "Right"
+              },
+              "default_value": "right",
+              "return_format": "value",
+              "layout": "horizontal"
+            },
+            {
+              "key": "field_reactive_card_content_hover_background_color",
+              "label": "Hover Background Color",
+              "name": "hover_background_color",
+              "aria-label": "",
+              "type": "color_picker",
+              "instructions": "Choose the background color shown when the reactive card is hovered.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "#FFC53D",
+              "enable_opacity": 0,
+              "return_format": "string"
+            },
+            {
+              "key": "field_reactive_card_content_add_card_top_spacing",
+              "label": "Card Top Spacing",
+              "name": "add_card_top_spacing",
+              "aria-label": "",
+              "type": "true_false",
+              "instructions": "Enable extra top spacing on the reactive card when the design requires it.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "message": "",
+              "default_value": 0,
+              "ui": 1,
+              "ui_on_text": "Shown",
+              "ui_off_text": "Hidden"
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_quote_content_section": {
+          "key": "layout_quote_content_section",
+          "name": "quote_content_section",
+          "label": "Quote + Content Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_quote_content_section_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_quote_content_section_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the heading shown on the right side of the section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Top Surgery, Breast Disease and Breast Cancer",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_quote_content_section_quote_content",
+              "label": "Quote Content",
+              "name": "quote_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Add the quote or statistic shown in the left column. Inline links and emphasis are supported.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_quote_content_section_quote_position",
+              "label": "Quote Position",
+              "name": "quote_position",
+              "aria-label": "",
+              "type": "button_group",
+              "instructions": "Choose whether the quote appears on the left or right side on desktop layouts.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "choices": {
+                "left": "Left",
+                "right": "Right"
+              },
+              "default_value": "left",
+              "return_format": "value",
+              "layout": "horizontal"
+            },
+            {
+              "key": "field_quote_content_section_body_content",
+              "label": "Body Content",
+              "name": "body_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Add the main body content shown on the right side of the section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_quote_content_section_bottom_content_style",
+              "label": "Bottom Content Style",
+              "name": "bottom_content_style",
+              "aria-label": "",
+              "type": "button_group",
+              "instructions": "This changes how the Bottom Content is rendered on the page. Highlighted Note: centered emphasis line below the section. Body Content Block: normal full-width content below the section, useful for paragraphs and lists like grants or references.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "choices": {
+                "highlighted_note": "Highlighted Note",
+                "body_content": "Body Content Block"
+              },
+              "default_value": "highlighted_note",
+              "return_format": "value",
+              "layout": "horizontal"
+            },
+            {
+              "key": "field_quote_content_section_bottom_note",
+              "label": "Bottom Content",
+              "name": "bottom_note",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Optional content shown below the two-column section. Use this field for either a short centered note or a full-width content block, depending on Bottom Content Style.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_heading_intro_card_grid": {
+          "key": "layout_heading_intro_card_grid",
+          "name": "heading_intro_card_grid",
+          "label": "Heading + Intro + Card Grid",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_heading_intro_card_grid_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_heading_intro_card_grid_section_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the main heading shown above the intro text.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Types of Top Surgery",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_heading_intro_card_grid_intro_text",
+              "label": "Intro Text",
+              "name": "intro_text",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Add the centered intro text shown below the section heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_heading_intro_card_grid_cards",
+              "label": "Cards",
+              "name": "cards",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add the cards shown in the two-column grid.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "layout": "block",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "field_heading_intro_card_grid_card_title",
+              "button_label": "Add Card",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_heading_intro_card_grid_card_image",
+                  "label": "Image",
+                  "name": "image",
+                  "aria-label": "",
+                  "type": "image",
+                  "instructions": "Upload the card image.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                  },
+                  "return_format": "array",
+                  "library": "all",
+                  "min_width": "",
+                  "min_height": "",
+                  "min_size": "",
+                  "max_width": "",
+                  "max_height": "",
+                  "max_size": "",
+                  "mime_types": "",
+                  "preview_size": "medium"
+                },
+                {
+                  "key": "field_heading_intro_card_grid_card_title",
+                  "label": "Title",
+                  "name": "title",
+                  "aria-label": "",
+                  "type": "text",
+                  "instructions": "Card title shown under the image. If a link is added below, the link title will be used instead.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "placeholder": "Double Incision Mastectomy",
+                  "prepend": "",
+                  "append": "",
+                  "parent_repeater": "field_heading_intro_card_grid_cards"
+                },
+                {
+                  "key": "field_heading_intro_card_grid_card_link",
+                  "label": "Title Link",
+                  "name": "link",
+                  "aria-label": "",
+                  "type": "link",
+                  "instructions": "Optional link for the card title.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "return_format": "array",
+                  "parent_repeater": "field_heading_intro_card_grid_cards"
+                },
+                {
+                  "key": "field_heading_intro_card_grid_card_body_content",
+                  "label": "Body Content",
+                  "name": "body_content",
+                  "aria-label": "",
+                  "type": "wysiwyg",
+                  "instructions": "Add the card body copy.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "tabs": "all",
+                  "toolbar": "basic",
+                  "media_upload": 0,
+                  "delay": 0,
+                  "parent_repeater": "field_heading_intro_card_grid_cards"
+                }
+              ]
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_heading_intro_list_cta_section": {
+          "key": "layout_heading_intro_list_cta_section",
+          "name": "heading_intro_list_cta_section",
+          "label": "Heading + Intro + List + CTA",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_heading_intro_list_cta_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_heading_intro_list_cta_section_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the main heading shown at the top of the section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Prior to your appointment",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_heading_intro_list_cta_intro_text",
+              "label": "Intro Text",
+              "name": "intro_text",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Add the intro text shown directly below the heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_heading_intro_list_cta_body_content",
+              "label": "Body Content",
+              "name": "body_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Add the introductory body text shown above the list.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_heading_intro_list_cta_list_items",
+              "label": "List Items",
+              "name": "list_items",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add the bullet points shown in the list.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "layout": "table",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "field_heading_intro_list_cta_list_item",
+              "button_label": "Add List Item",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_heading_intro_list_cta_list_item",
+                  "label": "Item",
+                  "name": "item",
+                  "aria-label": "",
+                  "type": "text",
+                  "instructions": "",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "placeholder": "Search online for other examples of top surgery, and collect some pictures of your desired cosmetic outcome.",
+                  "prepend": "",
+                  "append": "",
+                  "parent_repeater": "field_heading_intro_list_cta_list_items"
+                }
+              ]
+            },
+            {
+              "key": "field_heading_intro_list_cta_cta_content",
+              "label": "CTA Content",
+              "name": "cta_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Add the centered CTA line shown below the list.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_heading_list_section": {
+          "key": "layout_heading_list_section",
+          "name": "heading_list_section",
+          "label": "Heading + List Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_heading_list_section_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_heading_list_section_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the heading shown above the list.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Additional Resources",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_heading_list_section_list_items",
+              "label": "List Items",
+              "name": "list_items",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add the list items shown below the heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "layout": "table",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "field_heading_list_section_list_item",
+              "button_label": "Add List Item",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_heading_list_section_list_item",
+                  "label": "Item",
+                  "name": "item",
+                  "aria-label": "",
+                  "type": "wysiwyg",
+                  "instructions": "Add one list item. Links are supported.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "tabs": "all",
+                  "toolbar": "basic",
+                  "media_upload": 0,
+                  "delay": 0,
+                  "parent_repeater": "field_heading_list_section_list_items"
+                }
+              ]
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_feature_content_section": {
+          "key": "layout_feature_content_section",
+          "name": "illustration_text_split_section",
+          "label": "Illustration + Text Split Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_feature_content_section_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_feature_content_section_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the main heading for the text content shown to the right of the image.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Breast Cancer",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_feature_content_section_heading_alignment",
+              "label": "Heading Alignment",
+              "name": "heading_alignment",
+              "aria-label": "",
+              "type": "button_group",
+              "instructions": "Choose whether the section heading is aligned left or centered.",
+              "required": 0,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_feature_content_section_style_variant",
+                    "operator": "!=",
+                    "value": "top_surgery"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "choices": {
+                "left": "Left",
+                "center": "Center"
+              },
+              "default_value": "left",
+              "return_format": "value",
+              "layout": "horizontal"
+            },
+            {
+              "key": "field_feature_content_section_style_variant",
+              "label": "Style Variant",
+              "name": "style_variant",
+              "aria-label": "",
+              "type": "button_group",
+              "instructions": "Standard: regular image-left content section with optional highlight text, list, and supporting links. Centered Intro: centered heading with Intro Text shown as plain H5 above the main body copy.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "choices": {
+                "standard": "Standard",
+                "top_surgery": "Centered Intro"
+              },
+              "default_value": "standard",
+              "return_format": "value",
+              "layout": "horizontal"
+            },
+            {
+              "key": "field_feature_content_section_highlight_text",
+              "label": "Highlight Text",
+              "name": "highlight_text",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Optional highlighted callout text shown above the main body copy.",
+              "required": 0,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_feature_content_section_style_variant",
+                    "operator": "!=",
+                    "value": "top_surgery"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_feature_content_section_intro_text",
+              "label": "Intro Text",
+              "name": "intro_text",
+              "aria-label": "",
+              "type": "textarea",
+              "instructions": "Use this when Style Variant is Centered Intro. The text is shown as a plain H5 above the main body content.",
+              "required": 0,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_feature_content_section_style_variant",
+                    "operator": "==",
+                    "value": "top_surgery"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "rows": 3,
+              "placeholder": "Transgender and nonbinary people may require top surgery as part of their gender affirmation journey.",
+              "new_lines": "br"
+            },
+            {
+              "key": "field_feature_content_section_body_content",
+              "label": "Body Content",
+              "name": "body_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Add the main body copy shown to the right of the image.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_feature_content_section_supporting_links_content",
+              "label": "Supporting Links Content",
+              "name": "supporting_links_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Optional supporting sentence or link line shown below the section copy.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_feature_content_section_list_style_variant",
+              "label": "List Style Variant",
+              "name": "list_style_variant",
+              "aria-label": "",
+              "type": "button_group",
+              "instructions": "Choose the list style first. Default is a normal bullet list with one simple text field per bullet. Highlighted Lead Text creates bullets with a pink lead phrase followed by supporting text.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "choices": {
+                "default": "Default",
+                "highlighted_lead_text": "Highlighted Lead Text"
+              },
+              "default_value": "default",
+              "return_format": "value",
+              "layout": "horizontal"
+            },
+            {
+              "key": "field_feature_content_section_list_items",
+              "label": "List Items",
+              "name": "list_items",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add one bullet per row. The fields shown below will change based on the selected List Style Variant.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "layout": "table",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "field_feature_content_section_default_text",
+              "button_label": "Add List Item",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_feature_content_section_default_text",
+                  "label": "Bullet Text",
+                  "name": "default_text",
+                  "aria-label": "",
+                  "type": "textarea",
+                  "instructions": "Use this for the Default list style. Enter the full bullet text here.",
+                  "required": 0,
+                  "conditional_logic": [
+                    [
+                      {
+                        "field": "field_feature_content_section_list_style_variant",
+                        "operator": "==",
+                        "value": "default"
+                      }
+                    ]
+                  ],
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "rows": 3,
+                  "placeholder": "Enter the full bullet text.",
+                  "new_lines": "br",
+                  "parent_repeater": "field_feature_content_section_list_items"
+                },
+                {
+                  "key": "field_feature_content_section_lead_text",
+                  "label": "Lead Text",
+                  "name": "lead_text",
+                  "aria-label": "",
+                  "type": "text",
+                  "instructions": "Use this for the Highlighted Lead Text style. This text becomes the pink lead phrase at the start of the bullet.",
+                  "required": 0,
+                  "conditional_logic": [
+                    [
+                      {
+                        "field": "field_feature_content_section_list_style_variant",
+                        "operator": "==",
+                        "value": "highlighted_lead_text"
+                      }
+                    ]
+                  ],
+                  "wrapper": {
+                    "width": "35",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "placeholder": "Referral letter",
+                  "prepend": "",
+                  "append": "",
+                  "parent_repeater": "field_feature_content_section_list_items"
+                },
+                {
+                  "key": "field_feature_content_section_supporting_text",
+                  "label": "Supporting Text",
+                  "name": "supporting_text",
+                  "aria-label": "",
+                  "type": "textarea",
+                  "instructions": "Use this for the Highlighted Lead Text style. Enter the normal supporting text that appears after the lead phrase.",
+                  "required": 0,
+                  "conditional_logic": [
+                    [
+                      {
+                        "field": "field_feature_content_section_list_style_variant",
+                        "operator": "==",
+                        "value": "highlighted_lead_text"
+                      }
+                    ]
+                  ],
+                  "wrapper": {
+                    "width": "65",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "rows": 3,
+                  "placeholder": "Bring this with you to your first appointment.",
+                  "new_lines": "br",
+                  "parent_repeater": "field_feature_content_section_list_items"
+                }
+              ]
+            },
+            {
+              "key": "field_feature_content_section_add_top_spacing",
+              "label": "Add Top Spacing",
+              "name": "add_top_spacing",
+              "aria-label": "",
+              "type": "true_false",
+              "instructions": "Enable to add extra spacing above this section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "message": "",
+              "default_value": 0,
+              "ui": 1,
+              "ui_on_text": "Added",
+              "ui_off_text": "None"
+            },
+            {
+              "key": "field_feature_content_section_add_divider",
+              "label": "Bottom Divider",
+              "name": "add_divider",
+              "aria-label": "",
+              "type": "true_false",
+              "instructions": "Enable the bottom divider line used between stacked sections.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "message": "",
+              "default_value": 0,
+              "ui": 1,
+              "ui_on_text": "Shown",
+              "ui_off_text": "Hidden"
+            },
+            {
+              "key": "field_feature_content_section_tab_media",
+              "label": "Media",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_feature_content_section_image_position",
+              "label": "Image Position",
+              "name": "image_position",
+              "aria-label": "",
+              "type": "button_group",
+              "instructions": "Choose whether the image appears on the left or right side of the section. Leave this as Left for existing sections unless the design clearly places the image on the right.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+              },
+              "choices": {
+                "left": "Left",
+                "right": "Right"
+              },
+              "default_value": "left",
+              "return_format": "value",
+              "layout": "horizontal"
+            },
+            {
+              "key": "field_feature_content_section_image",
+              "label": "Section Image",
+              "name": "section_image",
+              "aria-label": "",
+              "type": "image",
+              "instructions": "Upload the illustration or image shown in the image column for this section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "return_format": "array",
+              "library": "all",
+              "min_width": "",
+              "min_height": "",
+              "min_size": "",
+              "max_width": "",
+              "max_height": "",
+              "max_size": "",
+              "mime_types": "",
+              "preview_size": "medium"
+            }
+          ],
+          "min": "",
+          "max": ""
+        }
+      },
+      "min": "",
+      "max": "",
+      "button_label": "Add Section"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ],
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "post"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "Flexible content page builder for creating custom page layouts. Build pages using modular, reusable content sections that can be arranged in any order to create unique page designs.",
+  "show_in_rest": 0,
+  "display_title": "",
+  "modified": 1774811605
+}
