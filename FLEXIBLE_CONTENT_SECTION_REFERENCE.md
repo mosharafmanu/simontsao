@@ -177,6 +177,45 @@ Notes:
 - use this when a section has grouped headings like `Post-surgery you can`, `You should`, and `Things to avoid`
 - each bullet item is structured so the lead phrase stays styled consistently
 
+### `Soft Panel Content Section`
+
+Use for:
+- sections with a heading above a single soft-background panel
+- repeated heading/paragraph blocks inside that panel
+
+Typical fields to fill:
+- Section Heading
+- Panel Items
+
+Panel item fields:
+- Item Heading
+- Item Content
+
+### `Surgery Techniques Section`
+
+Use for:
+- one full section that starts with a heading and intro callout, then repeats image-left technique rows with stacked subheadings and body content
+- procedure comparison sections like `Single Incision Top Surgery Techniques`
+
+Typical fields to fill:
+- Section Heading
+- Intro Callout Content
+- Technique Items
+
+Technique item fields:
+- Technique Image
+- Technique Heading
+- Intro Content
+- Content Blocks
+
+Content block fields:
+- Block Heading
+- Block Content
+
+Optional closing block fields:
+- Bottom Heading
+- Bottom Content
+
 ### `Additional Information Links`
 
 Use for:
@@ -1400,6 +1439,446 @@ Screenshot:
 
 Use this flexible content:
 - `Additional Information Links`
+
+## Single Incision Mastectomy Page
+
+Source:
+- `simontsao-html/single-incision-mastectomy/index.html`
+
+### Section 1: Page Hero
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Inner Hero`
+
+What to fill in:
+- Hero Title
+- Background Image
+
+Notes:
+- use `Single Incision Mastectomy` as the hero title
+- leave Hero Summary empty
+
+### Section 2: Single Incision Mastectomy Intro
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Centered Intro Section`
+
+What to fill in:
+- Main Heading
+- Intro Text
+
+Notes:
+- use the centered linked paragraph as `Intro Text`
+
+### Section 3: Overview and General Considerations
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Full Width Content Section`
+
+What to fill in:
+- Section Heading
+- Callout Type: `Rich Callout With Links`
+- Linked / Rich Callout
+- Body Content
+
+Notes:
+- use `Section Heading` = `Overview and General Considerations`
+- put the pink bordered intro sentence in `Linked / Rich Callout`
+- put the `Single incision mastectomy is a low risk and safe operation.` sentence plus the `Pros` and `Cons` lists in `Body Content`
+- leave Main Heading and other lower fields empty
+
+### Section 4: Single Incision Top Surgery Techniques
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Surgery Techniques Section`
+
+What to fill in:
+- Section Heading
+- Intro Callout Content
+- Technique Items
+- Bottom Heading
+- Bottom Content
+
+Notes:
+- add one technique item for `Keyhole Top Surgery`
+- add one technique item for `Periareolar Top Surgery (Donut Technique)`
+- for each technique item:
+- use `Intro Content` for the opening paragraphs before any subheading
+- add content blocks for `Advantages ...` and `Limitations and Considerations`
+- include the `Please note` colour legend inside the final content block content where needed
+- use `Bottom Heading` = `Additional Considerations`
+- use `Bottom Content` for the final full-width paragraph block
+
+### Section 5: Links to Additional Information
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Additional Information Links`
+
+## Double Incision Mastectomy Page
+
+Source:
+- `simontsao-html/double-incision-mastectomy/index.html`
+
+### Section 1: Page Hero
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Inner Hero`
+
+What to fill in:
+- Hero Title
+- Background Image
+
+Notes:
+- use `Double Incision Mastectomy` as the hero title
+- leave Hero Summary empty
+
+### Section 2: Double Incision Mastectomy Intro
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Full Width Content Section`
+
+What to fill in:
+- Section Heading
+- Callout Type: `Rich Callout With Links`
+- Linked / Rich Callout
+
+Notes:
+- use `Section Heading` = `Double Incision Mastectomy`
+- put both intro paragraphs into `Linked / Rich Callout`
+- keep the inline `top surgery` link in the callout content
+- leave Main Heading, Body Content, Secondary Content, Bottom Note, and CTA Content empty
+
+### Section 3: Overview and General Considerations
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Full Width Content Section`
+
+What to fill in:
+- Section Heading
+- Callout Type: `Rich Callout With Links`
+- Linked / Rich Callout
+- Body Content
+
+Notes:
+- use `Section Heading` = `Overview and General Considerations`
+- put the top highlighted intro sentence in `Linked / Rich Callout`
+- keep the inline `top surgery` link in the callout content
+- put the `Double incision mastectomy is a low risk and safe operation.` sentence plus the `Pros` and `Cons` lists in `Body Content`
+- leave Main Heading, Secondary Content, Bottom Note, and CTA Content empty
+
+### Section 4: Scar Placement
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Surgery Techniques Section`
+
+What to fill in:
+- Section Heading
+- Intro Callout Content
+- Technique Items
+- Bottom Heading
+- Bottom Content
+
+Notes:
+- use `Section Heading` = `Scar Placement`
+- put the top highlighted intro sentence in `Intro Callout Content`
+- add technique items for:
+- `Classic double incision`
+- `Hockey stick double incision`
+- `Joined double incision`
+- `High incision (Fishmouth)`
+- for each technique item:
+- use `Intro Content` for the opening explanatory paragraphs
+- use a content block for any `Benefits:` line
+- include the `Please note` colour legend in the first technique item content where needed
+- use `Bottom Heading` = `Additional Considerations`
+- use `Bottom Content` for the final full-width paragraph block
+
+### Section 5: Nipple Reconstruction
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Full Width Content Section`
+
+What to fill in:
+- Section Heading
+- Callout Type: `Rich Callout With Links`
+- Linked / Rich Callout
+- Body Content
+- Secondary Content
+
+Notes:
+- use `Section Heading` = `Nipple Reconstruction`
+- put the top highlighted intro paragraph in `Linked / Rich Callout`
+- put the `Note:` paragraph and the nipple position paragraph in `Body Content`
+- put the `Free Nipple Grafts (FNG)` subheading and following paragraphs in `Secondary Content`
+- leave Main Heading, Bottom Note, and CTA Content empty
+
+### Section 6: Potential Complications
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Surgery Techniques Section`
+
+What to fill in:
+- Section Heading
+- Technique Items
+
+Notes:
+- use `Section Heading` = `Potential Complications`
+- leave `Intro Callout Content` empty
+- add technique items for:
+- `Patchy necrosis resulting in irregularities and discolouration`
+- `Loss of nipple projection (height)`
+- `Displacement and asymmetry`
+- `Hypertrophic (thickened and raised) scar`
+- for each technique item:
+- use `Technique Image` for the illustration
+- use `Technique Heading` for the blue heading
+- use `Intro Content` for the paragraph content
+- leave `Content Blocks`, `Bottom Heading`, and `Bottom Content` empty
+
+### Section 7: Advanced Sensory Preservation Techniques
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Illustration + Text Split Section`
+
+What to fill in:
+- Image Position: `Left`
+- Section Heading
+- Highlight Text
+- Body Content
+- Section Image
+
+Notes:
+- use `Section Heading` = `Advanced Sensory Preservation Techniques`
+- put the short pink bordered intro in `Highlight Text`
+- put the remaining paragraphs in `Body Content`
+- keep the inline `Sensory Preservation Top Surgery` link in `Body Content`
+- use the sensory preservation illustration as `Section Image`
+
+### Section 8: Non-surgical Nipple Reconstruction Options
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Full Width Content Section`
+
+What to fill in:
+- Section Heading
+- Callout Type: `Rich Callout With Links`
+- Linked / Rich Callout
+- Body Content
+
+Notes:
+- use `Section Heading` = `Non-surgical nipple reconstruction options - 3D tattoo and attached prosthesis`
+- put the short pink bordered intro sentence in `Linked / Rich Callout`
+- put the remaining paragraphs in `Body Content`
+- leave Main Heading, Secondary Content, Bottom Note, and CTA Content empty
+
+## Sensory Preservation Page
+
+Source:
+- `simontsao-html/sensory-preservation-top-surgery/index.html`
+
+### Section 1: Sensory Preservation Techniques For Gender Affirming Surgery
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Full Width Content Section`
+
+What to fill in:
+- Section Heading
+- Callout Type: `Rich Callout With Links`
+- Linked / Rich Callout
+
+Notes:
+- use `Section Heading` = `Sensory Preservation Techniques For Gender Affirming Surgery`
+- put both intro paragraphs into `Linked / Rich Callout`
+- leave Main Heading, Body Content, Secondary Content, Bottom Note, and CTA Content empty
+
+### Section 2: Top Surgery Techniques That Preserve Nipple Sensation
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Illustration + Text Split Section`
+
+What to fill in:
+- Image Position: `Right`
+- Section Heading
+- Highlight Text
+- Body Content
+- List Style Variant: `Highlighted Lead Text`
+- List Items
+- Supporting Links Content
+- Section Image
+
+Notes:
+- use `Section Heading` = `Top Surgery Techniques That Preserve Nipple Sensation`
+- put `Procedures that maintain the native nerve and blood supply to the nipple–areola complex` in `Highlight Text`
+- put the explanatory paragraph before the list in `Body Content`
+- use `List Items` for:
+- `Single Incision Top Surgery (Keyhole and Periareolar Techniques)`
+- `Buttonhole Top Surgery`
+- `Inverted-T (Anchor or Reduction Pattern) Top Surgery`
+- put the `Additional Considerations` heading and final paragraph in `Supporting Links Content`
+- use the illustration as `Section Image`
+- current highlighted list lead text fields are plain text, so item titles should be entered as styled text rather than inline links unless the section is upgraded later
+
+### Section 3: Targeted Nipple–Areola Complex Reinnervation (TNR)
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Illustration + Text Split Section`
+
+What to fill in:
+- Image Position: `Left`
+- Section Heading
+- Highlight Text
+- Body Content
+- Section Image
+
+Notes:
+- use `Section Heading` = `Targeted Nipple–Areola Complex Reinnervation (TNR)`
+- put `A microsurgical nerve transposition technique performed at the time of double-incision top surgery` in `Highlight Text`
+- put the intro paragraph, the `How Targeted Nipple Reinnervation Works` subheading, and the following paragraphs in `Body Content`
+- use the nerve illustration as `Section Image`
+
+### Section 4: Outcomes and Considerations
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Soft Panel Content Section`
+
+What to fill in:
+- Section Heading
+- Panel Items
+
+Notes:
+- use `Section Heading` = `Outcomes and Considerations`
+- add panel items for:
+- `Variable Sensory Recovery`
+- `Intraoperative Nerve Identification`
+- `Recovery Timeline`
+- `Hypersensitivity`
+- `Operative Time`
+- put the paragraph for each item in `Item Content`
+
+### Section 5: Nerve Grafting for Nipple Sensation Restoration
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Illustration + Text Split Section`
+
+What to fill in:
+- Image Position: `Left`
+- Section Heading
+- Highlight Text
+- Body Content
+- Section Image
+
+Notes:
+- use `Section Heading` = `Nerve Grafting for Nipple Sensation Restoration`
+- put `A reconstructive option when direct nerve reconnection is not possible` in `Highlight Text`
+- put the intro paragraph, the `How Nerve Grafting Works` subheading, and the following paragraphs in `Body Content`
+- use the nerve grafting illustration as `Section Image`
+
+### Section 6: Outcomes and Considerations
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Soft Panel Content Section`
+
+What to fill in:
+- Section Heading
+- Panel Items
+
+Notes:
+- use `Section Heading` = `Outcomes and Considerations`
+- add panel items for:
+- `Specialist Availability`
+- `Financial Considerations`
+- `Sensory Recovery`
+- put the paragraph for each item in `Item Content`
+
+### Section 7: Choosing the Appropriate Sensory Preservation Approach
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Full Width Content Section`
+
+What to fill in:
+- Section Heading
+- Body Content
+
+Notes:
+- use `Section Heading` = `Choosing the Appropriate Sensory Preservation Approach`
+- put the two explanatory paragraphs in `Body Content`
+- leave Main Heading, intro/callout fields, Secondary Content, Bottom Note, and CTA Content empty
+
+### Section 8: Additional Resources
+
+Screenshot:
+- add screenshot here
+
+Use this flexible content:
+- `Heading + List Section`
+
+What to fill in:
+- Section Heading
+- List Items
+
+Notes:
+- use `Section Heading` = `Additional Resources`
+- add one list item per reference link
 
 ## For Future Pages
 
