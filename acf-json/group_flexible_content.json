@@ -3367,6 +3367,155 @@
               "toolbar": "basic",
               "media_upload": 0,
               "delay": 0
+            },
+            {
+              "key": "field_quote_content_section_list_style_variant",
+              "label": "List Style Variant",
+              "name": "list_style_variant",
+              "aria-label": "",
+              "type": "button_group",
+              "instructions": "Optional. Choose the list style for bullets shown below the content block. Default renders each bullet as one full line. Highlighted Lead Text renders a highlighted phrase first, followed by supporting text, matching the research grants style.",
+              "required": 0,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_quote_content_section_bottom_content_style",
+                    "operator": "==",
+                    "value": "body_content"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "choices": {
+                "default": "Default",
+                "highlighted_lead_text": "Highlighted Lead Text"
+              },
+              "default_value": "default",
+              "return_format": "value",
+              "layout": "horizontal"
+            },
+            {
+              "key": "field_quote_content_section_list_items",
+              "label": "List Items",
+              "name": "list_items",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Optional. Add one bullet per row below the content block. The fields shown in each row change based on the selected List Style Variant.",
+              "required": 0,
+              "conditional_logic": [
+                [
+                  {
+                    "field": "field_quote_content_section_bottom_content_style",
+                    "operator": "==",
+                    "value": "body_content"
+                  }
+                ]
+              ],
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "layout": "block",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "field_quote_content_section_default_text",
+              "button_label": "Add List Item",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_quote_content_section_default_text",
+                  "label": "Bullet Text",
+                  "name": "default_text",
+                  "aria-label": "",
+                  "type": "textarea",
+                  "instructions": "Use this for the Default list style. Enter the full bullet text in one field.",
+                  "required": 0,
+                  "conditional_logic": [
+                    [
+                      {
+                        "field": "field_quote_content_section_list_style_variant",
+                        "operator": "==",
+                        "value": "default"
+                      }
+                    ]
+                  ],
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "rows": 3,
+                  "placeholder": "Enter the full bullet text.",
+                  "new_lines": "br",
+                  "parent_repeater": "field_quote_content_section_list_items"
+                },
+                {
+                  "key": "field_quote_content_section_lead_text",
+                  "label": "Lead Text",
+                  "name": "lead_text",
+                  "aria-label": "",
+                  "type": "text",
+                  "instructions": "Use this for the Highlighted Lead Text style. This becomes the highlighted phrase at the start of the bullet.",
+                  "required": 0,
+                  "conditional_logic": [
+                    [
+                      {
+                        "field": "field_quote_content_section_list_style_variant",
+                        "operator": "==",
+                        "value": "highlighted_lead_text"
+                      }
+                    ]
+                  ],
+                  "wrapper": {
+                    "width": "35",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "placeholder": "2023:",
+                  "prepend": "",
+                  "append": "",
+                  "parent_repeater": "field_quote_content_section_list_items"
+                },
+                {
+                  "key": "field_quote_content_section_supporting_text",
+                  "label": "Supporting Text",
+                  "name": "supporting_text",
+                  "aria-label": "",
+                  "type": "textarea",
+                  "instructions": "Use this for the Highlighted Lead Text style. Enter the regular sentence that follows the highlighted lead phrase.",
+                  "required": 0,
+                  "conditional_logic": [
+                    [
+                      {
+                        "field": "field_quote_content_section_list_style_variant",
+                        "operator": "==",
+                        "value": "highlighted_lead_text"
+                      }
+                    ]
+                  ],
+                  "wrapper": {
+                    "width": "65",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "rows": 3,
+                  "placeholder": "Tour de Cure Pioneering Research Grant, Validating a novel nanotechnology...",
+                  "new_lines": "br",
+                  "parent_repeater": "field_quote_content_section_list_items"
+                }
+              ]
             }
           ],
           "min": "",
@@ -4260,5 +4409,5 @@
   "description": "Flexible content page builder for creating custom page layouts. Build pages using modular, reusable content sections that can be arranged in any order to create unique page designs.",
   "show_in_rest": 0,
   "display_title": "",
-  "modified": 1774939628
+  "modified": 1774951041
 }
