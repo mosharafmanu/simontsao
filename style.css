@@ -703,6 +703,15 @@ url("assets/images/Breast%20Cancer%20Ribbon.webp") 2x);
 .breast-conditions-intro__content p:last-child{
 	margin-bottom:0;
 }
+.full-width-content-section__secondary-content--indented{
+	margin-left:4rem;
+	margin-right:4rem;
+}
+.full-width-content-section__secondary-content--indented p:last-child,
+.full-width-content-section__bottom-note p:last-child,
+.full-width-content-section__cta p:last-child{
+	margin-bottom:0;
+}
 .text-background-hover:hover{
 	background-color:rgba(255,255,255,0.75);
 }
@@ -1198,6 +1207,10 @@ url("assets/images/Connections.webp") 2x);
 @media (max-width: 991px){
 	.hero-title{
 		padding-left:40px;
+	}
+	.full-width-content-section__secondary-content--indented{
+		margin-left:0;
+		margin-right:0;
 	}
 	.h1-style{
 		font-size:35px;
