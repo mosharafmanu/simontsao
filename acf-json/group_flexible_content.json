@@ -3999,6 +3999,406 @@
           "min": "",
           "max": ""
         },
+        "layout_nipple_reconstruction_section": {
+          "key": "layout_nipple_reconstruction_section",
+          "name": "nipple_reconstruction_section",
+          "label": "Nipple Reconstruction Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_nipple_reconstruction_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_nipple_reconstruction_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the main section heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Nipple Reconstruction",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_nipple_reconstruction_highlight_text",
+              "label": "Highlight Text",
+              "name": "highlight_text",
+              "aria-label": "",
+              "type": "textarea",
+              "instructions": "Enter the bordered introductory paragraph shown below the heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "rows": 3,
+              "new_lines": "br"
+            },
+            {
+              "key": "field_nipple_reconstruction_body_content",
+              "label": "Body Content",
+              "name": "body_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Enter the paragraph content shown between the callout and the FNG subheading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_nipple_reconstruction_subheading",
+              "label": "Subheading",
+              "name": "subheading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the blue subheading shown before the final paragraph.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Free Nipple Grafts (FNG)",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_nipple_reconstruction_subheading_content",
+              "label": "Subheading Content",
+              "name": "subheading_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Enter the paragraph content shown below the subheading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_sensation_preservation_overview_section": {
+          "key": "layout_sensation_preservation_overview_section",
+          "name": "sensation_preservation_overview_section",
+          "label": "Sensation Preservation Overview Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_sensation_preservation_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_sensation_preservation_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the main section heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Top Surgery Techniques That Preserve Nipple Sensation",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_sensation_preservation_highlight_text",
+              "label": "Highlight Text",
+              "name": "highlight_text",
+              "aria-label": "",
+              "type": "textarea",
+              "instructions": "Enter the bordered introductory callout sentence.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "rows": 3,
+              "new_lines": "br"
+            },
+            {
+              "key": "field_sensation_preservation_intro_content",
+              "label": "Intro Content",
+              "name": "intro_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Enter the paragraph content shown above the list heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_sensation_preservation_list_heading",
+              "label": "List Heading",
+              "name": "list_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the blue heading shown above the list.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Techniques That Inherently Preserve Sensation",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_sensation_preservation_list_items",
+              "label": "List Items",
+              "name": "list_items",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add one list item per row. Lead Text becomes the pink heading at the top of the bullet. Optional Lead Link can be used when the original item heading is linked.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "layout": "block",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "field_sensation_preservation_lead_text",
+              "button_label": "Add List Item",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_sensation_preservation_lead_text",
+                  "label": "Lead Text",
+                  "name": "lead_text",
+                  "aria-label": "",
+                  "type": "text",
+                  "instructions": "Enter the pink lead text.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "35",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "placeholder": "Single Incision Top Surgery (Keyhole and Periareolar Techniques)",
+                  "prepend": "",
+                  "append": "",
+                  "parent_repeater": "field_sensation_preservation_list_items"
+                },
+                {
+                  "key": "field_sensation_preservation_lead_link",
+                  "label": "Lead Link",
+                  "name": "lead_link",
+                  "aria-label": "",
+                  "type": "url",
+                  "instructions": "Optional. Add a link for the pink lead text when needed.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "placeholder": "https://example.com",
+                  "parent_repeater": "field_sensation_preservation_list_items"
+                },
+                {
+                  "key": "field_sensation_preservation_supporting_text",
+                  "label": "Supporting Text",
+                  "name": "supporting_text",
+                  "aria-label": "",
+                  "type": "textarea",
+                  "instructions": "Enter the supporting paragraph shown below the pink lead text.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "40",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "rows": 3,
+                  "new_lines": "br",
+                  "parent_repeater": "field_sensation_preservation_list_items"
+                }
+              ]
+            },
+            {
+              "key": "field_sensation_preservation_bottom_heading",
+              "label": "Bottom Heading",
+              "name": "bottom_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the final blue heading shown below the list.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Additional Considerations",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_sensation_preservation_bottom_content",
+              "label": "Bottom Content",
+              "name": "bottom_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Enter the paragraph content shown below the final heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            },
+            {
+              "key": "field_sensation_preservation_tab_media",
+              "label": "Media",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_sensation_preservation_image",
+              "label": "Section Image",
+              "name": "section_image",
+              "aria-label": "",
+              "type": "image",
+              "instructions": "Upload or choose the illustration shown on the right side of the section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "return_format": "array",
+              "library": "all",
+              "min_width": "",
+              "min_height": "",
+              "min_size": "",
+              "max_width": "",
+              "max_height": "",
+              "max_size": "",
+              "mime_types": "",
+              "preview_size": "medium"
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
         "layout_full_width_image_highlighted_list_section": {
           "key": "layout_full_width_image_highlighted_list_section",
           "name": "full_width_image_highlighted_list_section",
@@ -5365,6 +5765,99 @@
           "min": "",
           "max": ""
         },
+        "layout_compact_resources_section": {
+          "key": "layout_compact_resources_section",
+          "name": "compact_resources_section",
+          "label": "Compact Resources Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_compact_resources_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_compact_resources_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the heading shown above the resource list.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Additional Resources",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_compact_resources_list_items",
+              "label": "List Items",
+              "name": "list_items",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add the resource links shown below the heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "layout": "table",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "field_compact_resources_item",
+              "button_label": "Add List Item",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_compact_resources_item",
+                  "label": "Item",
+                  "name": "item",
+                  "aria-label": "",
+                  "type": "wysiwyg",
+                  "instructions": "Add one list item. Links are supported.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "tabs": "all",
+                  "toolbar": "basic",
+                  "media_upload": 0,
+                  "delay": 0,
+                  "parent_repeater": "field_compact_resources_list_items"
+                }
+              ]
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
         "layout_soft_panel_content_section": {
           "key": "layout_soft_panel_content_section",
           "name": "soft_panel_content_section",
@@ -6232,5 +6725,5 @@
   "description": "Flexible content page builder for creating custom page layouts. Build pages using modular, reusable content sections that can be arranged in any order to create unique page designs.",
   "show_in_rest": 0,
   "display_title": "",
-  "modified": 1775227600
+  "modified": 1775233000
 }

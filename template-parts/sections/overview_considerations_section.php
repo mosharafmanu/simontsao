@@ -34,30 +34,32 @@ $bottom_content    = get_sub_field( 'bottom_content' );
 					</div>
 				<?php endif; ?>
 
-				<div class="row mb-lg-5">
-					<div class="col-sm-12 order-sm-1 col-lg-4 col-md-4 mt-lg-5 align-self-center mt-5">
-						<?php
-						if ( $section_image && function_exists( 'simontsao_render_responsive_picture' ) ) {
-							simontsao_render_responsive_picture(
-								$section_image,
-								[
-									'class'         => 'img-fluid mx-auto d-block img-hospital--style mb-5 mb-lg-0 img-protected',
-									'sizes'         => '(max-width: 991px) 100vw, 213px',
-									'lazy'          => true,
-									'fetchpriority' => 'auto',
-									'fallback_size' => 'medium',
-									'image_sizes'   => [ 'thumbnail', 'medium', 'medium_large' ],
-								]
-							);
-						}
-						?>
+				<?php if ( $section_image || $image_row_content ) : ?>
+					<div class="row mb-lg-5">
+						<div class="col-sm-12 order-sm-1 col-lg-4 col-md-4 mt-lg-5 align-self-center mt-5">
+							<?php
+							if ( $section_image && function_exists( 'simontsao_render_responsive_picture' ) ) {
+								simontsao_render_responsive_picture(
+									$section_image,
+									[
+										'class'         => 'img-fluid mx-auto d-block img-hospital--style mb-5 mb-lg-0 img-protected',
+										'sizes'         => '(max-width: 991px) 100vw, 213px',
+										'lazy'          => true,
+										'fetchpriority' => 'auto',
+										'fallback_size' => 'medium',
+										'image_sizes'   => [ 'thumbnail', 'medium', 'medium_large' ],
+									]
+								);
+							}
+							?>
+						</div>
+						<div class="col-sm-12 order-sm-2 col-lg-8 col-md-8 align-self-center">
+							<?php if ( $image_row_content ) : ?>
+								<?php echo wp_kses_post( $image_row_content ); ?>
+							<?php endif; ?>
+						</div>
 					</div>
-					<div class="col-sm-12 order-sm-2 col-lg-8 col-md-8 align-self-center">
-						<?php if ( $image_row_content ) : ?>
-							<?php echo wp_kses_post( $image_row_content ); ?>
-						<?php endif; ?>
-					</div>
-				</div>
+				<?php endif; ?>
 
 				<?php if ( $bottom_heading || $bottom_content ) : ?>
 					<div class="row">

@@ -504,6 +504,10 @@ Use this flexible content:
 
 ## Top Surgery Page
 
+Developer note:
+- Page: `Top Surgery`
+- `Additional Resources` should use `Compact Resources Section`
+
 Source:
 - `simontsao-html/top-surgery/index.html`
 
@@ -680,7 +684,7 @@ Screenshot:
 ![Additional Resources](docs/top-surgery/additional-resources.png)
 
 Use this flexible content:
-- `Heading + List Section`
+- `Compact Resources Section`
 
 What to fill in:
 - Section Heading
@@ -1580,20 +1584,23 @@ Screenshot:
 - add screenshot here
 
 Use this flexible content:
-- `Full Width Content Section`
+- `Overview Considerations Section`
 
 What to fill in:
 - Section Heading
-- Callout Type: `Rich Callout With Links`
-- Linked / Rich Callout
+- Highlight Text
 - Body Content
+- Section Image
+- Image Row Content
+- Bottom Heading
+- Bottom Content
 
 Notes:
 - use `Section Heading` = `Overview and General Considerations`
-- put the top highlighted intro sentence in `Linked / Rich Callout`
+- put the top highlighted intro sentence in `Highlight Text`
 - keep the inline `top surgery` link in the callout content
 - put the `Double incision mastectomy is a low risk and safe operation.` sentence plus the `Pros` and `Cons` lists in `Body Content`
-- leave Main Heading, Secondary Content, Bottom Note, and CTA Content empty
+- leave `Section Image`, `Image Row Content`, `Bottom Heading`, and `Bottom Content` empty
 
 ### Section 4: Scar Placement
 
@@ -1631,22 +1638,22 @@ Screenshot:
 - add screenshot here
 
 Use this flexible content:
-- `Full Width Content Section`
+- `Nipple Reconstruction Section`
 
 What to fill in:
 - Section Heading
-- Callout Type: `Rich Callout With Links`
-- Linked / Rich Callout
+- Highlight Text
 - Body Content
-- Secondary Content
+- Subheading
+- Subheading Content
 
 Notes:
 - use `Section Heading` = `Nipple Reconstruction`
-- put the top highlighted intro paragraph in `Linked / Rich Callout`
+- put the top highlighted intro paragraph in `Highlight Text`
 - put the `Note:` paragraph and the nipple position paragraph in `Body Content`
-- put the `Free Nipple Grafts (FNG)` subheading and following paragraphs in `Secondary Content`
+- use `Subheading` = `Free Nipple Grafts (FNG)`
+- put the FNG paragraph block in `Subheading Content`
 - this is the top portion of one continuous original HTML wrapper that continues into `Potential Complications`
-- leave Main Heading, Bottom Note, and CTA Content empty
 
 ### Section 6: Potential Complications
 
@@ -1719,6 +1726,10 @@ Notes:
 
 ## Sensory Preservation Page
 
+Developer note:
+- Page: `Sensory Preservation`
+- `Additional Resources` should use `Compact Resources Section`
+
 Source:
 - `simontsao-html/sensory-preservation-top-surgery/index.html`
 
@@ -1746,29 +1757,31 @@ Screenshot:
 - add screenshot here
 
 Use this flexible content:
-- `Illustration + Text Split Section`
+- `Sensation Preservation Overview Section`
 
 What to fill in:
-- Image Position: `Right`
 - Section Heading
 - Highlight Text
-- Body Content
-- List Style Variant: `Highlighted Lead Text`
+- Intro Content
+- List Heading
 - List Items
-- Supporting Links Content
+- Bottom Heading
+- Bottom Content
 - Section Image
 
 Notes:
 - use `Section Heading` = `Top Surgery Techniques That Preserve Nipple Sensation`
 - put `Procedures that maintain the native nerve and blood supply to the nipple–areola complex` in `Highlight Text`
-- put the explanatory paragraph before the list in `Body Content`
+- put the explanatory paragraph before the list in `Intro Content`
+- use `List Heading` = `Techniques That Inherently Preserve Sensation`
 - use `List Items` for:
 - `Single Incision Top Surgery (Keyhole and Periareolar Techniques)`
 - `Buttonhole Top Surgery`
 - `Inverted-T (Anchor or Reduction Pattern) Top Surgery`
-- put the `Additional Considerations` heading and final paragraph in `Supporting Links Content`
+- use `Bottom Heading` = `Additional Considerations`
+- put the final paragraph in `Bottom Content`
 - use the illustration as `Section Image`
-- current highlighted list lead text fields are plain text, so item titles should be entered as styled text rather than inline links unless the section is upgraded later
+- use `Lead Link` on list items where the original pink heading is linked
 
 ### Section 3: Targeted Nipple–Areola Complex Reinnervation (TNR)
 
@@ -1776,20 +1789,28 @@ Screenshot:
 - add screenshot here
 
 Use this flexible content:
-- `Illustration + Text Split Section`
+- `Sensation Preservation Overview Section`
 
 What to fill in:
-- Image Position: `Left`
 - Section Heading
 - Highlight Text
-- Body Content
+- Intro Content
+- List Heading
+- List Items
+- Bottom Heading
+- Bottom Content
 - Section Image
 
 Notes:
 - use `Section Heading` = `Targeted Nipple–Areola Complex Reinnervation (TNR)`
 - put `A microsurgical nerve transposition technique performed at the time of double-incision top surgery` in `Highlight Text`
-- put the intro paragraph, the `How Targeted Nipple Reinnervation Works` subheading, and the following paragraphs in `Body Content`
+- put the intro paragraph in `Intro Content`
+- use `List Heading` = `How Targeted Nipple Reinnervation Works`
+- leave `List Items` empty
+- put the following explanatory paragraphs in `Bottom Content`
+- leave `Bottom Heading` empty
 - use the nerve illustration as `Section Image`
+- `Outcomes and Considerations` remains the next separate section
 
 ### Section 4: Outcomes and Considerations
 
@@ -1819,19 +1840,26 @@ Screenshot:
 - add screenshot here
 
 Use this flexible content:
-- `Illustration + Text Split Section`
+- `Sensation Preservation Overview Section`
 
 What to fill in:
-- Image Position: `Left`
 - Section Heading
 - Highlight Text
-- Body Content
+- Intro Content
+- List Heading
+- List Items
+- Bottom Heading
+- Bottom Content
 - Section Image
 
 Notes:
 - use `Section Heading` = `Nerve Grafting for Nipple Sensation Restoration`
 - put `A reconstructive option when direct nerve reconnection is not possible` in `Highlight Text`
-- put the intro paragraph, the `How Nerve Grafting Works` subheading, and the following paragraphs in `Body Content`
+- put the intro paragraph in `Intro Content`
+- use `List Heading` = `How Nerve Grafting Works`
+- leave `List Items` empty
+- put the following explanatory paragraphs in `Bottom Content`
+- leave `Bottom Heading` empty
 - use the nerve grafting illustration as `Section Image`
 
 ### Section 6: Outcomes and Considerations
