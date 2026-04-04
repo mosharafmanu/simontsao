@@ -13,12 +13,24 @@ $list_items      = get_sub_field( 'list_items' );
 $bottom_heading  = get_sub_field( 'bottom_heading' );
 $bottom_content  = get_sub_field( 'bottom_content' );
 $section_image   = get_sub_field( 'section_image' );
+$image_position  = get_sub_field( 'image_position' ) ?: 'right';
+
+$content_column_classes = 'col-sm-12 col-lg-8 col-md-8';
+$image_column_classes   = 'col-sm-12 col-lg-4 col-md-4 mt-lg-5 align-self-start';
+
+if ( 'right' === $image_position ) {
+	$content_column_classes .= ' order-sm-2 order-2 order-md-1 order-lg-0';
+	$image_column_classes   .= ' order-sm-1';
+} else {
+	$content_column_classes .= ' order-sm-2';
+	$image_column_classes   .= ' order-sm-1';
+}
 ?>
 
 <div class="bloc section section-light" id="understanding-top-surgery">
 	<div class="container bloc-lg bloc-md-lg">
 		<div class="row">
-			<div class="col-sm-12 order-sm-2 col-lg-8 col-md-8 order-2 order-md-1 order-lg-0">
+			<div class="<?php echo esc_attr( $content_column_classes ); ?>">
 				<?php if ( $section_heading ) : ?>
 					<h2 class="text-primary text-center h3-padding-bottom float-none mb-5 text-lg-left"><?php echo esc_html( $section_heading ); ?></h2>
 				<?php endif; ?>
@@ -82,7 +94,7 @@ $section_image   = get_sub_field( 'section_image' );
 				<?php endif; ?>
 			</div>
 
-			<div class="col-sm-12 order-sm-1 col-lg-4 col-md-4 mt-lg-5 align-self-start">
+			<div class="<?php echo esc_attr( $image_column_classes ); ?>">
 				<?php
 				if ( $section_image && function_exists( 'simontsao_render_responsive_picture' ) ) {
 					simontsao_render_responsive_picture(

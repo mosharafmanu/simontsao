@@ -1773,6 +1773,7 @@ Use this flexible content:
 
 What to fill in:
 - Section Heading
+- Image Position: `Right`
 - Highlight Text
 - Intro Content
 - List Heading
@@ -1805,6 +1806,7 @@ Use this flexible content:
 
 What to fill in:
 - Section Heading
+- Image Position: `Left`
 - Highlight Text
 - Intro Content
 - List Heading
@@ -1856,6 +1858,7 @@ Use this flexible content:
 
 What to fill in:
 - Section Heading
+- Image Position: `Left`
 - Highlight Text
 - Intro Content
 - List Heading

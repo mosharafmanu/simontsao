@@ -58,7 +58,11 @@ if ( ! function_exists( 'simontsao_flexible_content' ) ) {
 			$template_file = locate_template( $template_path . '.php' );
 
 			if ( $template_file ) {
+				ob_start();
 				get_template_part( $template_path );
+				$template_markup = ob_get_clean();
+
+				echo simontsao_add_flexible_layout_classes_to_markup( $template_markup, $layout, $template_slug );
 			} elseif ( current_user_can( 'manage_options' ) && WP_DEBUG ) {
 				// Debug hint for admins when a template is missing
 				echo '<!-- Missing template: ' . esc_html( $template_path ) . '.php -->';
@@ -75,6 +79,73 @@ if ( ! function_exists( 'simontsao_flexible_content' ) ) {
 		// Clean up globals
 		unset( $GLOBALS['simontsao_previous_layout'] );
 		unset( $GLOBALS['simontsao_section_index'] );
+	}
+}
+
+if ( ! function_exists( 'simontsao_get_flexible_layout_inspector_classes' ) ) {
+	/**
+	 * Build inspector-friendly classes for rendered flexible content sections.
+	 *
+	 * @param string $layout        The ACF flexible content layout name.
+	 * @param string $template_slug The template slug used to render the layout.
+	 * @return string
+	 */
+	function simontsao_get_flexible_layout_inspector_classes( $layout, $template_slug ) {
+		$classes   = [];
+		$sanitizer = function ( $value ) {
+			$value = (string) $value;
+
+			if ( function_exists( 'sanitize_html_class' ) ) {
+				return sanitize_html_class( $value );
+			}
+
+			return trim( preg_replace( '/[^A-Za-z0-9_-]/', '-', $value ), '-' );
+		};
+		$template  = $sanitizer( $template_slug );
+
+		if ( $template ) {
+			$classes[] = $template;
+		}
+
+		return implode( ' ', array_unique( $classes ) );
+	}
+}
+
+if ( ! function_exists( 'simontsao_add_flexible_layout_classes_to_markup' ) ) {
+	/**
+	 * Add inspector-friendly flexible content classes to the first wrapper element.
+	 *
+	 * @param string $markup        Template markup.
+	 * @param string $layout        The ACF flexible content layout name.
+	 * @param string $template_slug The template slug used to render the layout.
+	 * @return string
+	 */
+	function simontsao_add_flexible_layout_classes_to_markup( $markup, $layout, $template_slug ) {
+		$inspector_classes = simontsao_get_flexible_layout_inspector_classes( $layout, $template_slug );
+
+		if ( ! $inspector_classes || ! is_string( $markup ) || '' === $markup ) {
+			return $markup;
+		}
+
+		$updated_markup = preg_replace(
+			'/<div\b([^>]*)\bclass=(["\'])([^"\']*)(\2)([^>]*)>/i',
+			'<div$1class=$2$3 ' . $inspector_classes . '$4$5>',
+			$markup,
+			1
+		);
+
+		if ( null !== $updated_markup && $updated_markup !== $markup ) {
+			return $updated_markup;
+		}
+
+		$updated_markup = preg_replace(
+			'/<div\b([^>]*)>/i',
+			'<div$1 class="' . $inspector_classes . '">',
+			$markup,
+			1
+		);
+
+		return null !== $updated_markup ? $updated_markup : $markup;
 	}
 }
 
