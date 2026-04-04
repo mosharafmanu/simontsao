@@ -801,23 +801,22 @@ Screenshot:
 ![Research Publications](docs/research/Research Publications.png)
 
 Use this flexible content:
-- `Full Width Content Section`
+- `Research Publications Section`
 
 What to fill in:
 - Section Heading
-- Highlighted / Intro Text
-- Intro Text Style: `Intro Text`
-- Body Content
-- Secondary Content
-- Bottom Note
+- Intro Text
+- Publications Content
+- Reference Note
 - CTA Content
 
 Notes:
-- leave Main Heading empty
-- leave Body Content empty unless extra content is needed between the intro and publication list
-- use Highlighted / Intro Text for the short intro sentence shown under the heading
-- use Secondary Content for the publication entries list
-- use Bottom Note for the ORCiD and Scopus line
+- use Intro Text for the short intro sentence shown under the heading
+- use Publications Content for the indented publication entries list
+- use the Text tab in Publications Content when adding inline spans:
+  - pink author name: `<span class="author">Name</span>`
+  - bold publication title: `<span class="title">Title text</span>`
+- use Reference Note for the ORCiD and Scopus line
 - use CTA Content for the final collaboration line
 
 
@@ -849,19 +848,18 @@ Screenshot:
 ![Making an Appointment](docs/Appointment Information:Patient Information/Making an Appointment.png)
 
 Use this flexible content:
-- `Illustration + Text Split Section`
+- `Patient Journey Step Section`
 
 What to fill in:
-- Heading Alignment: `Center`
 - Section Heading
 - List Style Variant: `Highlighted Lead Text`
 - List Items
-- Bottom Divider: `Shown`
 - Section Image
 
 Notes:
 - leave Body Content empty unless extra context is needed above the list
 - use the pink phone line as the first highlighted list item
+- in both list styles, accent words can be added with `<span class="text-accent">...</span>`
 
 ### Section 3: Day of Your Appointment
 
@@ -869,21 +867,21 @@ Screenshot:
 ![Day of Your Appointment](docs/Appointment Information:Patient Information/Day of Your Appointment.png)
 
 Use this flexible content:
-- `Illustration + Text Split Section`
+- `Patient Journey Step Section`
 
 What to fill in:
-- Heading Alignment: `Center`
 - Section Heading
-- Highlight Text
+- Intro Text
 - List Style Variant: `Highlighted Lead Text`
 - List Items
 - Body Content
-- Bottom Divider: `Shown`
 - Section Image
 
 Notes:
-- use Highlight Text for the short line introducing the document checklist
+- turn on `Show Divider Above`
+- use Intro Text for the short line introducing the document checklist
 - keep the closing wait-time paragraph in Body Content below the list
+- in both list styles, accent words can be added with `<span class="text-accent">...</span>`
 
 ### Section 4: During Your Appointment
 
@@ -891,18 +889,18 @@ Screenshot:
 ![During Your Appointment](docs/Appointment Information:Patient Information/During Your Appointment.png)
 
 Use this flexible content:
-- `Illustration + Text Split Section`
+- `Patient Journey Step Section`
 
 What to fill in:
-- Heading Alignment: `Center`
 - Section Heading
 - List Style Variant: `Highlighted Lead Text`
 - List Items
-- Bottom Divider: `Shown`
 - Section Image
 
 Notes:
+- turn on `Show Divider Above`
 - keep the support person phrase highlighted inside the relevant list item
+- in both list styles, accent words can be added with `<span class="text-accent">...</span>`
 
 ### Section 5: Medical Investigations
 
@@ -910,16 +908,15 @@ Screenshot:
 ![Medical Investigations](docs/Appointment Information:Patient Information/Medical Investigations.png)
 
 Use this flexible content:
-- `Illustration + Text Split Section`
+- `Patient Journey Step Section`
 
 What to fill in:
-- Heading Alignment: `Center`
 - Section Heading
 - Body Content
-- Bottom Divider: `Shown`
 - Section Image
 
 Notes:
+- turn on `Show Divider Above`
 - no list is needed for this section
 
 ### Section 6: Second Appointment
@@ -928,16 +925,20 @@ Screenshot:
 ![Second Appointment](docs/Appointment Information:Patient Information/Second Appointment.png)
 
 Use this flexible content:
-- `Illustration + Text Split Section`
+- `Patient Journey Step Section`
 
 What to fill in:
-- Heading Alignment: `Center`
 - Section Heading
 - List Items
+- Bottom Content
+- Bottom CTA Content
 - Section Image
 
 Notes:
+- turn on `Show Divider Above`
 - keep all four outcome points as list items
+- use Bottom Content for the centered follow-up sentence
+- use Bottom CTA Content for the final centered Cancer Journey line
 
 ### Section 7: Links to Additional Information
 
@@ -1006,47 +1007,34 @@ Notes:
 - use `Highlight Text` for `Booking an appointment with our clinic is simple and confidential.`
 - use `List Items` for the booking bullet points
 
-### Section 4: Our Team Intro
+### Section 4: Our Team + Emma Chittick
 
 Screenshot:
 - add screenshot here
 
 Use this flexible content:
-- `Full Width Content Section`
+- `Team Profile Section`
 
 What to fill in:
 - Section Heading
-- Highlighted / Intro Text
-
-Notes:
-- `Section Heading` = `Our Team`
-- use `Highlighted / Intro Text` with `Intro Text Style: Intro Text`
-- leave Main Heading empty
-- leave Body Content empty
-
-### Section 5: Emma Chittick Profile
-
-Screenshot:
-- add screenshot here
-
-Use this flexible content:
-- `About Specialist Intro`
-
-What to fill in:
-- Main Heading
-- Subheading
+- Intro Callout
+- Profile Name
+- Pronouns
 - Highlight Text
-- Specialist Content
+- Profile Content
+- Show Divider Below
 - Profile Image
 
 Notes:
-- `Main Heading` = `Emma Chittick`
-- `Subheading` = `(she/her)`
+- `Section Heading` = `Our Team`
+- use `Intro Callout` for the supportive team summary above the profile
+- `Profile Name` = `Emma Chittick`
+- `Pronouns` = `(she/her)`
 - `Highlight Text` = `Emma is the first point of contact for our patients and at the heart of the clinic.`
-- put Emma’s biography paragraphs into `Specialist Content`
-- leave the expertise fields empty unless more profile structure is needed later
+- put Emma’s biography paragraphs into `Profile Content`
+- keep `Show Divider Below` enabled to match the original divider under the full block
 
-### Section 6: Booking Form
+### Section 5: Booking Form
 
 Screenshot:
 - add screenshot here
@@ -1277,23 +1265,24 @@ Screenshot:
 ![Pain Management](docs/breast-surgery-recovery/Pain Management.png)
 
 Use this flexible content:
-- `Illustration + Text Split Section`
+- `Recovery Info Section`
 
 What to fill in:
+- Show Divider Above: `Hidden`
 - Image Position: `Right`
-- Heading Alignment: `Center`
 - Section Heading
 - Highlight Text
-- Body Content
+- Intro Content
 - List Items
-- Bottom Divider: `Shown`
+- Body Content
 - Section Image
 
 Notes:
 - `Section Heading` = `Pain Management`
 - use `Highlight Text` for the pain-management callout sentence
-- use `Body Content` for the `Pain management Tips` lead-in
+- use `Intro Content` for the `Pain management Tips` bold lead-in
 - use `List Items` for the bullet points
+- leave `Body Content` empty unless you need extra text below the list
 - use the pain management illustration as the image
 
 ### Section 5: Wound Care
@@ -1302,20 +1291,24 @@ Screenshot:
 ![Wound Care](docs/breast-surgery-recovery/Wound Care.png)
 
 Use this flexible content:
-- `Illustration + Text Split Section`
+- `Recovery Info Section`
 
 What to fill in:
 - Image Position: `Left`
-- Heading Alignment: `Center`
+- Show Divider Above: `Shown`
 - Section Heading
 - Highlight Text
+- Intro Content
+- List Items
 - Body Content
 - Section Image
 
 Notes:
 - `Section Heading` = `Wound Care`
 - use `Highlight Text` for the wound-healing callout
-- use `Body Content` for the intro sentence and the bullet list in WYSIWYG
+- use `Intro Content` for the intro sentence above the list
+- use `List Items` for the wound-care bullet points
+- leave `Body Content` empty unless you need extra text below the list
 
 ### Section 6: Links to Additional Information
 
@@ -1352,15 +1345,15 @@ Screenshot:
 ![What is Oncoplastic Breast Surgery?](docs/oncoplastic-breast-surgery/What is Oncoplastic Breast Surgery?.png)
 
 Use this flexible content:
-- `Full Width Content Section`
+- `Centered Intro Section`
 
 What to fill in:
-- Section Heading
-- Body Content
+- Main Heading
+- Intro Text
 
 Notes:
-- `Section Heading` = `What is Oncoplastic Breast Surgery?`
-- leave Main Heading and intro/callout fields empty
+- `Main Heading` = `What is Oncoplastic Breast Surgery?`
+- use `Intro Text` for the centered paragraph below the heading
 
 ### Section 3: Traditional Breast Surgery
 
@@ -1368,16 +1361,17 @@ Screenshot:
 ![Traditional Breast Surgery](docs/oncoplastic-breast-surgery/Traditional Breast Surgery.png)
 
 Use this flexible content:
-- `Illustration + Text Split Section`
+- `Extended Illustration Content Section`
 
 What to fill in:
 - Image Position: `Left`
 - Section Heading
 - Body Content
+- Add Heading Top Margin: `On`
 - Section Image
 
 Notes:
-- leave Highlight Text empty
+- leave `Continuation Content` empty
 
 ### Section 4: Oncoplastic Technique
 
@@ -1385,16 +1379,18 @@ Screenshot:
 ![Oncoplastic Technique](docs/oncoplastic-breast-surgery/Oncoplastic Technique.png)
 
 Use this flexible content:
-- `Illustration + Text Split Section`
+- `Extended Illustration Content Section`
 
 What to fill in:
 - Image Position: `Right`
 - Section Heading
 - Body Content
+- Continuation Content
 - Section Image
 
 Notes:
-- keep all explanatory paragraphs in `Body Content`
+- use `Body Content` for the top-row content beside the image
+- use `Continuation Content` for the full-width paragraph block underneath
 
 ### Section 5: What is the difference between normal breast surgery and oncoplastic breast surgery?
 
@@ -1424,13 +1420,17 @@ Screenshot:
 ![Immediate breast reconstruction techniques when a mastectomy is necessary.](docs/oncoplastic-breast-surgery/Immediate breast reconstruction techniques when.png)
 
 Use this flexible content:
-- `Illustration + Text Split Section`
+- `Extended Illustration Content Section`
 
 What to fill in:
 - Image Position: `Left`
 - Section Heading
 - Body Content
+- Add Content Top Spacing: `On`
 - Section Image
+
+Notes:
+- leave `Continuation Content` empty
 
 ### Section 7: Links to Additional Information
 
@@ -1482,19 +1482,24 @@ Screenshot:
 - add screenshot here
 
 Use this flexible content:
-- `Full Width Content Section`
+- `Overview Considerations Section`
 
 What to fill in:
 - Section Heading
-- Callout Type: `Rich Callout With Links`
-- Linked / Rich Callout
+- Highlight Text
 - Body Content
+- Section Image
+- Image Row Content
+- Bottom Heading
+- Bottom Content
 
 Notes:
 - use `Section Heading` = `Overview and General Considerations`
-- put the pink bordered intro sentence in `Linked / Rich Callout`
+- put the pink bordered intro sentence in `Highlight Text`
 - put the `Single incision mastectomy is a low risk and safe operation.` sentence plus the `Pros` and `Cons` lists in `Body Content`
-- leave Main Heading and other lower fields empty
+- use `Section Image` and `Image Row Content` for the embedded illustration row
+- use `Bottom Heading` = `Additional Considerations`
+- use `Bottom Content` for the final explanatory text block
 
 ### Section 4: Single Incision Top Surgery Techniques
 
@@ -1640,6 +1645,7 @@ Notes:
 - put the top highlighted intro paragraph in `Linked / Rich Callout`
 - put the `Note:` paragraph and the nipple position paragraph in `Body Content`
 - put the `Free Nipple Grafts (FNG)` subheading and following paragraphs in `Secondary Content`
+- this is the top portion of one continuous original HTML wrapper that continues into `Potential Complications`
 - leave Main Heading, Bottom Note, and CTA Content empty
 
 ### Section 6: Potential Complications
@@ -1657,6 +1663,7 @@ What to fill in:
 Notes:
 - use `Section Heading` = `Potential Complications`
 - leave `Intro Callout Content` empty
+- this is the continuation of the original `Nipple Reconstruction` wrapper, split into its own flexible section for content management
 - add technique items for:
 - `Patchy necrosis resulting in irregularities and discolouration`
 - `Loss of nipple projection (height)`

@@ -10,6 +10,11 @@ $intro_text      = get_sub_field( 'intro_text' );
 $body_content    = get_sub_field( 'body_content' );
 $list_items      = get_sub_field( 'list_items' );
 $cta_content     = get_sub_field( 'cta_content' );
+$show_divider_above = (bool) get_sub_field( 'show_divider_above' );
+
+if ( $show_divider_above && function_exists( 'simontsao_render_section_divider' ) ) {
+	simontsao_render_section_divider();
+}
 ?>
 
 <div class="bloc section bg-repeat section-light">

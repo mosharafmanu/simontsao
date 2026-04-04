@@ -13,6 +13,7 @@ $list_items      = get_sub_field( 'list_items' );
 $quote_position  = get_sub_field( 'quote_position' ) ?: 'left';
 $bottom_style    = get_sub_field( 'bottom_content_style' ) ?: 'highlighted_note';
 $list_style      = get_sub_field( 'list_style_variant' ) ?: 'default';
+$show_divider_above = (bool) get_sub_field( 'show_divider_above' );
 
 $quote_column_classes = 'col-sm-12 order-sm-1 col-lg-4 col-md-4 mt-lg-5 align-self-center';
 $body_column_classes  = 'col-sm-12 order-sm-2 col-lg-8 col-md-8';
@@ -63,6 +64,10 @@ if ( ! function_exists( 'simontsao_render_quote_content_section_list_item' ) ) {
 if ( 'right' === $quote_position ) {
 	$quote_column_classes .= ' order-lg-2';
 	$body_column_classes  .= ' order-lg-1';
+}
+
+if ( $show_divider_above && function_exists( 'simontsao_render_section_divider' ) ) {
+	simontsao_render_section_divider();
 }
 ?>
 

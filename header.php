@@ -77,11 +77,12 @@ $site_logo     = function_exists( 'simontsao_get_site_logo' ) ? simontsao_get_si
 				</div>
 			<?php endif; ?>
 
-			<div class="site-header__panel" id="site-header-panel" aria-hidden="true">
-				<nav class="site-header__nav" aria-label="<?php esc_attr_e( 'Primary menu', 'simontsao' ); ?>">
-					<?php
-					wp_nav_menu(
-						[
+				<div class="site-header__panel" id="site-header-panel" aria-hidden="true">
+					<nav class="site-header__nav" aria-label="<?php esc_attr_e( 'Primary menu', 'simontsao' ); ?>" aria-labelledby="primary-navigation-heading">
+						<h2 class="sr-only" id="primary-navigation-heading"><?php esc_html_e( 'Primary Navigation', 'simontsao' ); ?></h2>
+						<?php
+						wp_nav_menu(
+							[
 							'theme_location' => 'mainMenu',
 							'container'      => false,
 							'menu_class'     => 'site-header__menu',
@@ -94,7 +95,6 @@ $site_logo     = function_exists( 'simontsao_get_site_logo' ) ? simontsao_get_si
 		</div>
 	</div>
 </header>
-
 
 
 

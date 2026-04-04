@@ -8,7 +8,6 @@
 $main_heading    = get_sub_field( 'main_heading' );
 $first_heading   = get_sub_field( 'first_heading' );
 $callout_type    = get_sub_field( 'callout_type' ) ?: 'simple_intro_text';
-$content_layout_variant = get_sub_field( 'content_layout_variant' ) ?: 'standard';
 $first_intro_text = get_sub_field( 'first_highlight_text' );
 $rich_callout_content = get_sub_field( 'rich_callout_content' );
 $first_intro_text_style = get_sub_field( 'first_intro_text_style' ) ?: 'highlighted_text';
@@ -17,13 +16,16 @@ $second_content  = get_sub_field( 'second_content' );
 $bottom_note     = get_sub_field( 'bottom_note' );
 $cta_content     = get_sub_field( 'cta_content' );
 $secondary_content_classes = 'full-width-content-section__secondary-content mt-lg-5 mt-5';
+$previous_layout = $GLOBALS['simontsao_previous_layout'] ?? '';
+$main_heading_wrapper_classes = 'mx-auto d-block text-lg-center text-primary';
+
+if ( 'inner_hero' === $previous_layout ) {
+	$main_heading_wrapper_classes .= ' mt-sm-5';
+}
 
 if ( ! function_exists( 'simontsao_render_full_width_content_html' ) ) {
 	/**
 	 * Render controlled rich text content for the full width content section.
-	 *
-	 * This keeps the normal post-safe HTML rules, while preserving inline class
-	 * names needed for reference content such as publication author/title styling.
 	 *
 	 * @param string $content Raw WYSIWYG content.
 	 * @return string
@@ -44,21 +46,21 @@ if ( ! function_exists( 'simontsao_render_full_width_content_html' ) ) {
 		return wp_kses( $content, $allowed_html );
 	}
 }
-
-if ( 'indented_secondary_content' === $content_layout_variant ) {
-	$secondary_content_classes .= ' full-width-content-section__secondary-content--indented';
-}
 ?>
 
 <div class="bloc section section-light">
 	<div class="container bloc-md-lg bloc-sm" id="surgical-conditions-overview">
 		<div class="row" id="melbourne-breast-surgeon">
-			<div class="col-lg-12 col-md-12 mb-lg-5" id="melbourne-surgical-conditions">
-				<?php if ( $main_heading ) : ?>
-					<h2 class="mb-4 text-primary h1"><?php echo esc_html( $main_heading ); ?></h2>
-				<?php endif; ?>
+				<div class="col-lg-12 col-md-12" id="melbourne-surgical-conditions">
+					<?php if ( $main_heading ) : ?>
+						<div class="<?php echo esc_attr( $main_heading_wrapper_classes ); ?>" id="melbourne-breast-surgery">
+							<div class="text-center text-lg-left pb-lg-2" id="breast-surgical-expert">
+								<h2 class="mb-4 text-primary h1"><?php echo esc_html( $main_heading ); ?></h2>
+							</div>
+						</div>
+					<?php endif; ?>
 
-				<div class="row align-items-center mt-lg-5 mb-lg-0">
+					<div class="row align-items-center mb-lg-0">
 					<div class="col-sm-12 order-sm-2 align-self-center col-lg-12 col-md-12">
 						<?php if ( $first_heading ) : ?>
 							<h2 class="mb-4 text-primary"><?php echo esc_html( $first_heading ); ?></h2>

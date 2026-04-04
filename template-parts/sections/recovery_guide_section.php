@@ -12,16 +12,16 @@ $guide_groups          = get_sub_field( 'guide_groups' );
 ?>
 
 <div class="bloc section bg-repeat section-light">
-	<div class="container bloc-lg b-divider bloc-sm-lg">
-		<div class="row">
+	<div class="container bloc-lg b-divider bloc-sm-lg" id="recovery-timeline">
+		<div class="row" id="recovery-steps">
 			<div class="order-1 col-12 col-sm-12 order-lg-1 bloc-style col-lg-12">
 				<?php if ( $section_heading ) : ?>
-					<h2 class="text-primary text-center pt-5 pt-lg-0 mt-lg-5 mb-5 text-lg-center"><?php echo esc_html( $section_heading ); ?></h2>
+					<h2 class="text-primary text-center pt-5 pt-lg-0 mt-lg-5 mb-5 text-lg-center h3"><?php echo esc_html( $section_heading ); ?></h2>
 				<?php endif; ?>
 
 				<?php if ( $highlight_text ) : ?>
 					<div class="blockquote callout-accent">
-						<p class="callout-accent"><?php echo nl2br( esc_html( $highlight_text ) ); ?></p>
+						<p class="mb-lg-5"><?php echo nl2br( esc_html( $highlight_text ) ); ?></p>
 					</div>
 				<?php endif; ?>
 
@@ -33,17 +33,17 @@ $guide_groups          = get_sub_field( 'guide_groups' );
 
 				<?php if ( $guide_groups ) : ?>
 					<div class="recovery-guide-section__groups mt-5">
-						<?php foreach ( $guide_groups as $group ) : ?>
-							<?php
-							$group_heading = $group['group_heading'] ?? '';
-							$group_items   = $group['group_items'] ?? [];
-							?>
-							<?php if ( $group_heading ) : ?>
-								<h3 class="text-primary mb-4"><?php echo esc_html( $group_heading ); ?></h3>
-							<?php endif; ?>
+						<ul class="custom-list">
+							<?php foreach ( $guide_groups as $group ) : ?>
+								<?php
+								$group_heading = $group['group_heading'] ?? '';
+								$group_items   = $group['group_items'] ?? [];
+								?>
+								<?php if ( $group_heading ) : ?>
+									<p><b style="color: #003a5d;"><?php echo esc_html( $group_heading ); ?></b></p>
+								<?php endif; ?>
 
-							<?php if ( $group_items ) : ?>
-								<ul class="custom-list">
+								<?php if ( $group_items ) : ?>
 									<?php foreach ( $group_items as $item ) : ?>
 										<?php
 										$lead_text       = $item['lead_text'] ?? '';
@@ -59,15 +59,15 @@ $guide_groups          = get_sub_field( 'guide_groups' );
 														<?php echo esc_html( ' - ' ); ?>
 													<?php endif; ?>
 													<?php if ( $supporting_text ) : ?>
-														<?php echo esc_html( $supporting_text ); ?>
+														<?php echo nl2br( esc_html( $supporting_text ) ); ?>
 													<?php endif; ?>
 												</p>
 											</li>
 										<?php endif; ?>
 									<?php endforeach; ?>
-								</ul>
-							<?php endif; ?>
-						<?php endforeach; ?>
+								<?php endif; ?>
+							<?php endforeach; ?>
+						</ul>
 					</div>
 				<?php endif; ?>
 			</div>

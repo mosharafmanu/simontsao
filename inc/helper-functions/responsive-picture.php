@@ -26,6 +26,8 @@ if ( ! function_exists( 'simontsao_render_responsive_picture' ) ) {
 			'echo'          => true,
 			'fallback_size' => 'large',
 			'image_sizes'   => [ 'thumbnail', 'medium', 'medium_large', 'large', 'full' ],
+			'width'         => 0,
+			'height'        => 0,
 		];
 
 		$args = wp_parse_args( $args, $defaults );
@@ -54,6 +56,8 @@ if ( ! function_exists( 'simontsao_render_responsive_picture' ) ) {
 		$class         = trim( (string) $args['class'] );
 		$sizes_attr    = (string) $args['sizes'];
 		$loading       = $args['lazy'] ? 'lazy' : 'eager';
+		$width_attr    = absint( $args['width'] );
+		$height_attr   = absint( $args['height'] );
 
 		$file_path = get_attached_file( $file_id );
 
@@ -126,11 +130,15 @@ if ( ! function_exists( 'simontsao_render_responsive_picture' ) ) {
 
 		$html .= ' sizes="' . esc_attr( $sizes_attr ) . '"';
 
-		if ( ! empty( $fallback_image[1] ) ) {
+		if ( $width_attr > 0 ) {
+			$html .= ' width="' . esc_attr( (string) $width_attr ) . '"';
+		} elseif ( ! empty( $fallback_image[1] ) ) {
 			$html .= ' width="' . esc_attr( (string) $fallback_image[1] ) . '"';
 		}
 
-		if ( ! empty( $fallback_image[2] ) ) {
+		if ( $height_attr > 0 ) {
+			$html .= ' height="' . esc_attr( (string) $height_attr ) . '"';
+		} elseif ( ! empty( $fallback_image[2] ) ) {
 			$html .= ' height="' . esc_attr( (string) $fallback_image[2] ) . '"';
 		}
 

@@ -49,20 +49,22 @@ $bottom_highlight_note  = get_sub_field( 'bottom_highlight_note' );
 				<?php endif; ?>
 
 				<?php if ( $list_items ) : ?>
-					<div class="feature-content-section__list">
-						<ul class="custom-list feature-content-section__list--research">
+					<div>
+						<ul class="custom-list">
 							<?php foreach ( $list_items as $item ) : ?>
 								<?php if ( ! empty( $item['lead_text'] ) || ! empty( $item['supporting_text'] ) ) : ?>
 									<li>
-										<?php if ( ! empty( $item['lead_text'] ) ) : ?>
-											<strong><?php echo esc_html( $item['lead_text'] ); ?></strong>
-										<?php endif; ?>
-										<?php if ( ! empty( $item['lead_text'] ) && ! empty( $item['supporting_text'] ) ) : ?>
-											<?php echo esc_html( ' - ' ); ?>
-										<?php endif; ?>
-										<?php if ( ! empty( $item['supporting_text'] ) ) : ?>
-											<?php echo nl2br( esc_html( $item['supporting_text'] ) ); ?>
-										<?php endif; ?>
+										<p>
+											<?php if ( ! empty( $item['lead_text'] ) ) : ?>
+												<b style="color: #FF0080;"><?php echo esc_html( $item['lead_text'] ); ?></b>
+											<?php endif; ?>
+											<?php if ( ! empty( $item['lead_text'] ) && ! empty( $item['supporting_text'] ) ) : ?>
+												<?php echo esc_html( ' - ' ); ?>
+											<?php endif; ?>
+											<?php if ( ! empty( $item['supporting_text'] ) ) : ?>
+												<?php echo nl2br( esc_html( $item['supporting_text'] ) ); ?>
+											<?php endif; ?>
+										</p>
 									</li>
 								<?php endif; ?>
 							<?php endforeach; ?>
@@ -71,7 +73,7 @@ $bottom_highlight_note  = get_sub_field( 'bottom_highlight_note' );
 				<?php endif; ?>
 
 				<?php if ( $bottom_highlight_note ) : ?>
-					<p class="float-lg-none background-pink pt-lg-3 pb-lg-3 pl-lg-3 pr-lg-3 text-lg-center mt-lg-5 mt-5 pt-3 pb-3 pl-3 pr-3 pt-md-4 pb-md-4 pl-md-4 pr-md-4 text-primary">
+					<p class="float-lg-none background-pink pt-lg-3 pb-lg-3 pl-lg-3 pr-lg-3 text-lg-center mt-lg-5 mt-5 pt-3 pb-3 pl-3 pr-3 pt-md-4 pb-md-4 pl-md-4 pr-md-4">
 						<?php echo nl2br( esc_html( $bottom_highlight_note ) ); ?>
 					</p>
 				<?php endif; ?>

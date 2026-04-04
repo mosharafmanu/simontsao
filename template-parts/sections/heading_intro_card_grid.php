@@ -8,6 +8,11 @@
 $section_heading = get_sub_field( 'section_heading' );
 $intro_text      = get_sub_field( 'intro_text' );
 $cards           = get_sub_field( 'cards' );
+$show_divider_above = (bool) get_sub_field( 'show_divider_above' );
+
+if ( $show_divider_above && function_exists( 'simontsao_render_section_divider' ) ) {
+	simontsao_render_section_divider();
+}
 ?>
 
 <div class="bloc section section-light">

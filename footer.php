@@ -26,9 +26,9 @@ $language_text   = $footer_details['language_text'] ?? '';
 		<div class="row" id="appointment-booking-information">
 			<div class="col-sm-8 col-lg-8 align-self-start" id="contact-information">
 				<div class="text-lg-left contact-panel" id="contact-links">
-					<h3 class="mb-4 text-center text-md-left mb-lg-3 ml-lg-5 mt-lg-5" id="how-to-contact">
-						<strong><?php echo esc_html( $contact_heading ); ?></strong>
-					</h3>
+						<div class="mb-4 text-center text-md-left mb-lg-3 ml-lg-5 mt-lg-5 h3" id="how-to-contact">
+							<strong><?php echo esc_html( $contact_heading ); ?></strong>
+						</div>
 					<div class="ml-lg-5">
 						<table class="contact-table">
 							<tbody>

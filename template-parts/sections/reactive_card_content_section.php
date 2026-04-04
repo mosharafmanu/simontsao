@@ -15,6 +15,7 @@ $bottom_note           = get_sub_field( 'bottom_note' );
 $card_image            = get_sub_field( 'card_image' );
 $card_position         = get_sub_field( 'card_position' ) ?: 'right';
 $add_card_top_spacing  = (bool) get_sub_field( 'add_card_top_spacing' );
+$show_divider_above    = (bool) get_sub_field( 'show_divider_above' );
 $section_index         = isset( $GLOBALS['simontsao_section_index'] ) ? (int) $GLOBALS['simontsao_section_index'] : wp_rand( 1, 9999 );
 $section_id            = 'reactive-card-section-' . $section_index;
 $card_image_url        = '';
@@ -37,15 +38,17 @@ if ( ! function_exists( 'simontsao_render_reactive_card_list_item' ) ) {
 		if ( $has_highlighted_row ) {
 			?>
 			<li>
-				<?php if ( $lead_text ) : ?>
-					<strong><?php echo esc_html( $lead_text ); ?></strong>
-				<?php endif; ?>
-				<?php if ( $lead_text && $supporting_text ) : ?>
-					<?php echo esc_html( ' ' ); ?>
-				<?php endif; ?>
-				<?php if ( $supporting_text ) : ?>
-					<?php echo nl2br( esc_html( $supporting_text ) ); ?>
-				<?php endif; ?>
+				<p>
+					<?php if ( $lead_text ) : ?>
+						<span class="year"><?php echo esc_html( $lead_text ); ?></span>
+					<?php endif; ?>
+					<?php if ( $lead_text && $supporting_text ) : ?>
+						<?php echo esc_html( ' ' ); ?>
+					<?php endif; ?>
+					<?php if ( $supporting_text ) : ?>
+						<?php echo nl2br( esc_html( $supporting_text ) ); ?>
+					<?php endif; ?>
+				</p>
 			</li>
 			<?php
 			return;
@@ -53,7 +56,7 @@ if ( ! function_exists( 'simontsao_render_reactive_card_list_item' ) ) {
 
 		if ( 'default' === $list_style_variant && $default_text ) {
 			?>
-			<li><?php echo nl2br( esc_html( $default_text ) ); ?></li>
+			<li><p><?php echo nl2br( esc_html( $default_text ) ); ?></p></li>
 			<?php
 		}
 	}
@@ -65,10 +68,6 @@ if ( ! in_array( $heading_level, [ 'h2', 'h3' ], true ) ) {
 
 if ( $card_image ) {
 	$card_image_url = $card_image['sizes']['medium_large'] ?? $card_image['url'] ?? '';
-}
-
-if ( 'highlighted_lead_text' === $list_style_variant ) {
-	$list_classes .= ' feature-content-section__list--research';
 }
 
 $card_column_classes = 'col-lg-4 col-md-4 pb-5';
@@ -84,6 +83,10 @@ if ( 'left' === $card_position ) {
 
 if ( $add_card_top_spacing ) {
 	$card_column_classes .= ' pt-5';
+}
+
+if ( $show_divider_above && function_exists( 'simontsao_render_section_divider' ) ) {
+	simontsao_render_section_divider();
 }
 ?>
 

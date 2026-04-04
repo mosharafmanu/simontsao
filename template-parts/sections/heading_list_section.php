@@ -10,7 +10,7 @@ $list_items      = get_sub_field( 'list_items' );
 ?>
 
 <div class="bloc section bg-repeat section-light">
-	<div class="container bloc-lg b-divider bloc-lg-lg">
+	<div class="container bloc-lg bloc-lg-lg">
 		<div class="row">
 			<div class="order-1 col-12 col-sm-12 order-lg-1 bloc-style col-lg-12 mb-lg-5">
 				<?php if ( $section_heading ) : ?>

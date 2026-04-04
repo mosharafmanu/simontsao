@@ -177,3 +177,24 @@ if ( ! function_exists( 'simontsao_has_hero_first_section' ) ) {
 		return in_array( $first_layout, [ 'hero_section', 'inner_hero' ], true );
 	}
 }
+
+if ( ! function_exists( 'simontsao_render_section_divider' ) ) {
+	/**
+	 * Render the standalone divider block used between original static sections.
+	 *
+	 * @return void
+	 */
+	function simontsao_render_section_divider() {
+		?>
+		<div class="bloc section section-light d-sm-flex d-none">
+			<div class="container bloc-no-padding-lg bloc-sm-md bloc-no-padding">
+				<div class="row">
+					<div class="col text-left text-sm-left">
+						<div class="divider-h divider-0-background-color d-sm-block d-none"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php
+	}
+}

@@ -42,7 +42,12 @@ body{
 .author{
 	color:#FF0080;
 }
-
+a{
+	color: var(--swatch-var-7743)!important;
+}
+a:hover {
+    color: #CC004D !important;
+}
 .contact-table{
 	border-collapse:collapse;
 	width:100%;
@@ -50,12 +55,17 @@ body{
 	font-family:Helvetica, Arial, sans-serif;
 	font-size:1rem;
 }
-
 .contact-table td{
 	padding:0.25em 0;
 	vertical-align:top;
 }
-
+.contact-table td a{
+	color: var(--swatch-var-5072)!important;
+	transition: 0.3s all ease;
+}
+.contact-table td a:hover{
+	color: var(--swatch-var-7743)!important;
+}
 .label{
 	color:#FF0080;
 	font-weight:bold;
@@ -644,9 +654,6 @@ url("assets/images/Breast%20Cancer%20Ribbon.webp") 2x);
 .card-7-image:hover{
 	color:#003A5D!important;
 }
-.hero-title-surface:hover{
-	background-color:rgba(255,255,255,0.75);
-}
 .inner-hero{
 	overflow:hidden;
 }
@@ -657,19 +664,7 @@ url("assets/images/Breast%20Cancer%20Ribbon.webp") 2x);
 	position:relative;
 	z-index:1;
 }
-.inner-hero__title{
-	line-height:0.95;
-	width:100%;
-	padding:14px 36px 24px;
-	white-space:nowrap;
-}
-.inner-hero__summary{
-	width:100%;
-	margin:0 auto;
-	padding:32px 56px;
-	line-height:1.55;
-}
-.inner-hero__summary p:last-child{
+.hero-summary-surface p:last-child{
 	margin-bottom:0;
 }
 .feature-content-section__list{
@@ -703,11 +698,7 @@ url("assets/images/Breast%20Cancer%20Ribbon.webp") 2x);
 .breast-conditions-intro__content p:last-child{
 	margin-bottom:0;
 }
-.full-width-content-section__secondary-content--indented{
-	margin-left:4rem;
-	margin-right:4rem;
-}
-.full-width-content-section__secondary-content--indented p:last-child,
+.full-width-content-section__secondary-content p:last-child,
 .full-width-content-section__bottom-note p:last-child,
 .full-width-content-section__cta p:last-child{
 	margin-bottom:0;
@@ -1208,10 +1199,6 @@ url("assets/images/Connections.webp") 2x);
 	.hero-title{
 		padding-left:40px;
 	}
-	.full-width-content-section__secondary-content--indented{
-		margin-left:0;
-		margin-right:0;
-	}
 	.h1-style{
 		font-size:35px;
 	}
@@ -1292,13 +1279,6 @@ url("assets/images/Breast.webp") 2x);
 	.inner-hero__background{
 		background-image:var(--inner-hero-bg-mobile,var(--inner-hero-bg-desktop));
 	}
-	.inner-hero__title{
-		padding:14px 24px 20px;
-		white-space:normal;
-	}
-	.inner-hero__summary{
-		padding:24px 24px 28px;
-	}
 	.h1-style{
 		font-size:30px;
 	}
@@ -1376,12 +1356,6 @@ url("assets/images/Breast.webp") 2x);
 }
 
 @media (max-width: 575px){
-	.inner-hero__title{
-		padding:12px 18px 16px;
-	}
-	.inner-hero__summary{
-		padding:20px 18px 22px;
-	}
 	.hero-title-scale{
 		font-size:40px;
 	}
@@ -1794,4 +1768,8 @@ url("assets/images/Breast.webp") 2x);
 		padding-left: 1.15rem;
 		padding-right: 1.15rem;
 	}
+}
+
+.callout-list-section-container{
+	padding-top: 0;
 }

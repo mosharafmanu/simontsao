@@ -18,6 +18,7 @@ $list_items                = get_sub_field( 'list_items' );
 $list_style_variant        = get_sub_field( 'list_style_variant' ) ?: 'default';
 $add_top_spacing           = (bool) get_sub_field( 'add_top_spacing' );
 $add_divider               = (bool) get_sub_field( 'add_divider' );
+$show_divider_above        = (bool) get_sub_field( 'show_divider_above' );
 $row_classes               = 'row';
 $heading_classes           = 'mb-4 text-primary mt-5 mt-lg-0 mb-lg-4';
 $list_classes              = 'custom-list';
@@ -27,6 +28,16 @@ $image_column_classes      = 'text-left text-lg-center col-12 align-self-start c
 $content_column_classes    = 'text-left offset-0 order-1 col-12 align-self-start col-lg-8';
 $top_surgery_image_class   = 'col-sm-12 order-sm-1 col-lg-4 col-md-4 mt-lg-5 align-self-center';
 $top_surgery_content_class = 'col-sm-12 order-sm-2 col-lg-8 col-md-8';
+$uses_plain_intro_variant  = in_array( $style_variant, [ 'top_surgery', 'plain_intro' ], true );
+$is_research_overview      = is_page( 'research' ) && 'Research Overview' === wp_strip_all_tags( (string) $section_heading );
+$image_render_args         = [
+	'class'         => 'img-fluid mx-auto d-block img-protected illustratormedium',
+	'sizes'         => '(max-width: 991px) 100vw, 213px',
+	'lazy'          => true,
+	'fetchpriority' => 'auto',
+	'fallback_size' => 'medium',
+	'image_sizes'   => [ 'thumbnail', 'medium', 'medium_large' ],
+];
 
 if ( ! function_exists( 'simontsao_render_split_section_list_item' ) ) {
 	/**
@@ -61,9 +72,34 @@ if ( ! function_exists( 'simontsao_render_split_section_list_item' ) ) {
 
 		if ( 'default' === $list_style_variant && $default_text ) {
 			?>
-			<li><?php echo nl2br( esc_html( $default_text ) ); ?></li>
+			<li><p><?php echo nl2br( esc_html( $default_text ) ); ?></p></li>
 			<?php
 		}
+	}
+}
+
+if ( ! function_exists( 'simontsao_render_split_intro_text' ) ) {
+	/**
+	 * Render intro text with limited inline formatting support.
+	 *
+	 * @param string $content Intro text content.
+	 * @return string
+	 */
+	function simontsao_render_split_intro_text( $content ) {
+		$allowed_html = [
+			'br'   => [],
+			'span' => [
+				'class' => true,
+			],
+			'a'    => [
+				'class'  => true,
+				'href'   => true,
+				'target' => true,
+				'rel'    => true,
+			],
+		];
+
+		return wp_kses( $content, $allowed_html );
 	}
 }
 
@@ -77,9 +113,29 @@ if ( 'center' === $heading_alignment ) {
 	$heading_classes .= ' text-left';
 }
 
-if ( 'highlighted_lead_text' === $list_style_variant ) {
+if ( 'highlighted_lead_text' === $list_style_variant && ! $is_research_overview ) {
 	$list_classes  .= ' feature-content-section__list--research';
 	$links_classes .= ' feature-content-section__links--research';
+}
+
+if ( $show_divider_above && function_exists( 'simontsao_render_section_divider' ) ) {
+	simontsao_render_section_divider();
+}
+
+if ( $is_research_overview ) {
+	$container_classes      = 'container bloc-lg bloc-lg-lg';
+	$image_column_classes   = 'col-sm-12 order-sm-1 col-lg-4 col-md-4 align-self-start bloc-margin-bottom text-left';
+	$content_column_classes = 'col-sm-12 order-sm-2 col-lg-8 col-md-8';
+	$heading_classes        = 'mg-md text-primary text-center';
+	$links_classes          = 'mt-lg-5';
+	$image_render_args      = [
+		'class'         => 'img-fluid mx-auto d-block img-rd-lg img-padding-bottom mt-lg-5',
+		'sizes'         => '(max-width: 991px) 100vw, 214px',
+		'lazy'          => true,
+		'fetchpriority' => 'auto',
+		'fallback_size' => 'medium',
+		'image_sizes'   => [ 'thumbnail', 'medium', 'medium_large' ],
+	];
 }
 
 if ( $add_divider ) {
@@ -96,10 +152,10 @@ if ( 'right' === $image_position ) {
 	$content_column_classes    .= ' order-2';
 }
 
-if ( 'top_surgery' === $style_variant ) :
+if ( $uses_plain_intro_variant ) :
 	?>
-	<div class="bloc section section-light">
-		<div class="container bloc-lg bloc-md-lg">
+		<div class="bloc section section-light">
+			<div class="container bloc-lg bloc-md-lg">
 			<div class="row">
 				<div class="<?php echo esc_attr( $top_surgery_image_class ); ?>">
 					<?php
@@ -125,7 +181,7 @@ if ( 'top_surgery' === $style_variant ) :
 					<?php endif; ?>
 
 					<?php if ( $intro_text ) : ?>
-						<h5 class="mb-4"><?php echo nl2br( esc_html( $intro_text ) ); ?></h5>
+						<h5 class="mb-4"><?php echo simontsao_render_split_intro_text( $intro_text ); ?></h5>
 					<?php endif; ?>
 
 					<?php if ( $body_content ) : ?>
@@ -164,17 +220,7 @@ endif;
 			<div class="<?php echo esc_attr( $image_column_classes ); ?>">
 				<?php
 				if ( $section_image && function_exists( 'simontsao_render_responsive_picture' ) ) {
-					simontsao_render_responsive_picture(
-						$section_image,
-						[
-							'class'         => 'img-fluid mx-auto d-block img-protected illustratormedium',
-							'sizes'         => '(max-width: 991px) 100vw, 213px',
-							'lazy'          => true,
-							'fetchpriority' => 'auto',
-							'fallback_size' => 'medium',
-							'image_sizes'   => [ 'thumbnail', 'medium', 'medium_large' ],
-						]
-					);
+					simontsao_render_responsive_picture( $section_image, $image_render_args );
 				}
 				?>
 			</div>
@@ -196,15 +242,37 @@ endif;
 					</div>
 				<?php endif; ?>
 
-				<?php if ( $list_items ) : ?>
-					<div class="feature-content-section__list">
-						<ul class="<?php echo esc_attr( $list_classes ); ?>">
-							<?php foreach ( $list_items as $item ) : ?>
-								<?php simontsao_render_split_section_list_item( $item, $list_style_variant ); ?>
-							<?php endforeach; ?>
-						</ul>
-					</div>
-				<?php endif; ?>
+					<?php if ( $list_items ) : ?>
+						<div class="feature-content-section__list">
+							<ul class="<?php echo esc_attr( $list_classes ); ?>">
+								<?php foreach ( $list_items as $item ) : ?>
+									<?php if ( $is_research_overview && 'highlighted_lead_text' === $list_style_variant ) : ?>
+										<?php
+										$lead_text       = $item['lead_text'] ?? '';
+										$supporting_text = $item['supporting_text'] ?? '';
+										?>
+										<?php if ( $lead_text || $supporting_text ) : ?>
+											<li>
+												<p>
+													<?php if ( $lead_text ) : ?>
+														<span class="year"><?php echo esc_html( $lead_text ); ?></span>
+													<?php endif; ?>
+													<?php if ( $lead_text && $supporting_text ) : ?>
+														<?php echo esc_html( ' - ' ); ?>
+													<?php endif; ?>
+													<?php if ( $supporting_text ) : ?>
+														<?php echo nl2br( esc_html( $supporting_text ) ); ?>
+													<?php endif; ?>
+												</p>
+											</li>
+										<?php endif; ?>
+									<?php else : ?>
+										<?php simontsao_render_split_section_list_item( $item, $list_style_variant ); ?>
+									<?php endif; ?>
+								<?php endforeach; ?>
+							</ul>
+						</div>
+					<?php endif; ?>
 
 				<?php if ( $supporting_links_content ) : ?>
 					<div class="<?php echo esc_attr( $links_classes ); ?>">

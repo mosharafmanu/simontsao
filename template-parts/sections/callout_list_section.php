@@ -12,11 +12,11 @@ $list_items      = get_sub_field( 'list_items' );
 ?>
 
 <div class="bloc section section-light">
-	<div class="container bloc-sm-lg bloc-sm bloc-md" style="background-color:#FAF6F7;">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 mb-lg-4">
+	<div class="container bloc-md-lg bloc-sm callout-list-section-container">
+		<div class="row align-items-center mb-lg-0">
+			<div class="col-sm-12 order-sm-2 align-self-center col-lg-12 col-md-12 bgc-4836">
 				<?php if ( $section_heading ) : ?>
-					<h2 class="mb-4 text-primary"><?php echo esc_html( $section_heading ); ?></h2>
+					<h2 class="mb-4 text-primary mt-lg-3 mt-4"><?php echo esc_html( $section_heading ); ?></h2>
 				<?php endif; ?>
 
 				<?php if ( $highlight_text ) : ?>
