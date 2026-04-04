@@ -7,6 +7,9 @@
 
 $section_heading   = get_sub_field( 'section_heading' );
 $highlight_text    = get_sub_field( 'highlight_text' );
+$intro_text        = get_sub_field( 'intro_text' );
+$pros_items        = get_sub_field( 'pros_items' );
+$cons_items        = get_sub_field( 'cons_items' );
 $body_content      = get_sub_field( 'body_content' );
 $section_image     = get_sub_field( 'section_image' );
 $image_row_content = get_sub_field( 'image_row_content' );
@@ -31,6 +34,36 @@ $bottom_content    = get_sub_field( 'bottom_content' );
 				<?php if ( $body_content ) : ?>
 					<div class="mt-lg-5 mt-sm-5">
 						<?php echo wp_kses_post( $body_content ); ?>
+					</div>
+				<?php endif; ?>
+
+				<?php if ( $intro_text || $pros_items || $cons_items ) : ?>
+					<div class="mt-lg-5 mt-sm-5">
+						<?php if ( $intro_text ) : ?>
+							<p><?php echo nl2br( esc_html( $intro_text ) ); ?></p>
+						<?php endif; ?>
+
+						<?php if ( $pros_items ) : ?>
+							<p><b style="color: #003a5d;">Pros</b></p>
+							<ul class="custom-list">
+								<?php foreach ( $pros_items as $item ) : ?>
+									<?php if ( ! empty( $item['item'] ) ) : ?>
+										<li><p><?php echo nl2br( esc_html( $item['item'] ) ); ?></p></li>
+									<?php endif; ?>
+								<?php endforeach; ?>
+							</ul>
+						<?php endif; ?>
+
+						<?php if ( $cons_items ) : ?>
+							<p><b style="color: #003a5d;">Cons</b></p>
+							<ul class="custom-list">
+								<?php foreach ( $cons_items as $item ) : ?>
+									<?php if ( ! empty( $item['item'] ) ) : ?>
+										<li><p><?php echo nl2br( esc_html( $item['item'] ) ); ?></p></li>
+									<?php endif; ?>
+								<?php endforeach; ?>
+							</ul>
+						<?php endif; ?>
 					</div>
 				<?php endif; ?>
 

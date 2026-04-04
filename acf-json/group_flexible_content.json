@@ -3873,6 +3873,114 @@
               "new_lines": "br"
             },
             {
+              "key": "field_overview_considerations_intro_text",
+              "label": "Intro Text",
+              "name": "intro_text",
+              "aria-label": "",
+              "type": "textarea",
+              "instructions": "Enter the plain introductory sentence shown above the Pros and Cons lists.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "rows": 2,
+              "placeholder": "Single incision mastectomy is a low risk and safe operation.",
+              "new_lines": "br"
+            },
+            {
+              "key": "field_overview_considerations_pros_items",
+              "label": "Pros Items",
+              "name": "pros_items",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add one item per row for the Pros list.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "layout": "block",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "field_overview_considerations_pros_item",
+              "button_label": "Add Pros Item",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_overview_considerations_pros_item",
+                  "label": "Item",
+                  "name": "item",
+                  "aria-label": "",
+                  "type": "textarea",
+                  "instructions": "Enter one Pros list item.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "rows": 3,
+                  "new_lines": "br",
+                  "parent_repeater": "field_overview_considerations_pros_items"
+                }
+              ]
+            },
+            {
+              "key": "field_overview_considerations_cons_items",
+              "label": "Cons Items",
+              "name": "cons_items",
+              "aria-label": "",
+              "type": "repeater",
+              "instructions": "Add one item per row for the Cons list.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "layout": "block",
+              "pagination": 0,
+              "min": 0,
+              "max": 0,
+              "collapsed": "field_overview_considerations_cons_item",
+              "button_label": "Add Cons Item",
+              "rows_per_page": 20,
+              "sub_fields": [
+                {
+                  "key": "field_overview_considerations_cons_item",
+                  "label": "Item",
+                  "name": "item",
+                  "aria-label": "",
+                  "type": "textarea",
+                  "instructions": "Enter one Cons list item.",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "maxlength": "",
+                  "rows": 3,
+                  "new_lines": "br",
+                  "parent_repeater": "field_overview_considerations_cons_items"
+                }
+              ]
+            },
+            {
               "key": "field_overview_considerations_body_content",
               "label": "Body Content",
               "name": "body_content",
@@ -6725,5 +6833,5 @@
   "description": "Flexible content page builder for creating custom page layouts. Build pages using modular, reusable content sections that can be arranged in any order to create unique page designs.",
   "show_in_rest": 0,
   "display_title": "",
-  "modified": 1775233000
+  "modified": 1775235200
 }

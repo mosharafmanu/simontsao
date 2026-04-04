@@ -1491,6 +1491,9 @@ Use this flexible content:
 What to fill in:
 - Section Heading
 - Highlight Text
+- Intro Text
+- Pros Items
+- Cons Items
 - Body Content
 - Section Image
 - Image Row Content
@@ -1500,7 +1503,10 @@ What to fill in:
 Notes:
 - use `Section Heading` = `Overview and General Considerations`
 - put the pink bordered intro sentence in `Highlight Text`
-- put the `Single incision mastectomy is a low risk and safe operation.` sentence plus the `Pros` and `Cons` lists in `Body Content`
+- put `Single incision mastectomy is a low risk and safe operation.` in `Intro Text`
+- add the `Pros` bullets in `Pros Items`
+- add the `Cons` bullets in `Cons Items`
+- leave `Body Content` empty unless you need extra custom content above the image row
 - use `Section Image` and `Image Row Content` for the embedded illustration row
 - use `Bottom Heading` = `Additional Considerations`
 - use `Bottom Content` for the final explanatory text block
@@ -1589,6 +1595,9 @@ Use this flexible content:
 What to fill in:
 - Section Heading
 - Highlight Text
+- Intro Text
+- Pros Items
+- Cons Items
 - Body Content
 - Section Image
 - Image Row Content
@@ -1599,7 +1608,10 @@ Notes:
 - use `Section Heading` = `Overview and General Considerations`
 - put the top highlighted intro sentence in `Highlight Text`
 - keep the inline `top surgery` link in the callout content
-- put the `Double incision mastectomy is a low risk and safe operation.` sentence plus the `Pros` and `Cons` lists in `Body Content`
+- put `Double incision mastectomy is a low risk and safe operation.` in `Intro Text`
+- add the `Pros` bullets in `Pros Items`
+- add the `Cons` bullets in `Cons Items`
+- leave `Body Content` empty unless you need extra custom content above the optional lower fields
 - leave `Section Image`, `Image Row Content`, `Bottom Heading`, and `Bottom Content` empty
 
 ### Section 4: Scar Placement
