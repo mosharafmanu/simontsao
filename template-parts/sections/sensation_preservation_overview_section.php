@@ -6,6 +6,7 @@
  */
 
 $section_heading = get_sub_field( 'section_heading' );
+$show_divider    = get_sub_field( 'show_divider_above' );
 $highlight_text  = get_sub_field( 'highlight_text' );
 $intro_content   = get_sub_field( 'intro_content' );
 $list_heading    = get_sub_field( 'list_heading' );
@@ -26,6 +27,10 @@ if ( 'right' === $image_position ) {
 	$image_column_classes   .= ' order-sm-1';
 }
 ?>
+
+<?php if ( $show_divider && function_exists( 'simontsao_render_section_divider' ) ) : ?>
+	<?php simontsao_render_section_divider(); ?>
+<?php endif; ?>
 
 <div class="bloc section section-light" id="understanding-top-surgery">
 	<div class="container bloc-lg bloc-md-lg">

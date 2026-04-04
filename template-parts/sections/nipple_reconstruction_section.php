@@ -6,11 +6,16 @@
  */
 
 $section_heading    = get_sub_field( 'section_heading' );
+$show_divider_above = get_sub_field( 'show_divider_above' );
 $highlight_text     = get_sub_field( 'highlight_text' );
 $body_content       = get_sub_field( 'body_content' );
 $subheading         = get_sub_field( 'subheading' );
 $subheading_content = get_sub_field( 'subheading_content' );
 ?>
+
+<?php if ( $show_divider_above && function_exists( 'simontsao_render_section_divider' ) ) : ?>
+	<?php simontsao_render_section_divider(); ?>
+<?php endif; ?>
 
 <div class="bloc section section-light">
 	<div class="container bloc-lg bloc-sm-lg" id="nipple-reconstruction">

@@ -6,6 +6,7 @@
  */
 
 $section_heading      = get_sub_field( 'section_heading' );
+$show_divider_above   = get_sub_field( 'show_divider_above' );
 $intro_callout_content = get_sub_field( 'intro_callout_content' );
 $technique_items      = get_sub_field( 'technique_items' );
 $bottom_heading       = get_sub_field( 'bottom_heading' );
@@ -35,6 +36,10 @@ if ( ! function_exists( 'simontsao_render_surgery_techniques_html' ) ) {
 	}
 }
 ?>
+
+<?php if ( $show_divider_above && function_exists( 'simontsao_render_section_divider' ) ) : ?>
+	<?php simontsao_render_section_divider(); ?>
+<?php endif; ?>
 
 <div class="bloc section section-light">
 	<div class="container bloc-lg bloc-sm-lg">

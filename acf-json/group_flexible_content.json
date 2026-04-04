@@ -3858,8 +3858,8 @@
               "label": "Highlight Text",
               "name": "highlight_text",
               "aria-label": "",
-              "type": "textarea",
-              "instructions": "Enter the bordered callout sentence shown below the heading.",
+              "type": "wysiwyg",
+              "instructions": "Enter the bordered callout content shown below the heading. Use the Text tab if you need inline links such as <a class=\"link-accent\" href=\"../top-surgery/index.html\">top surgery</a>.",
               "required": 0,
               "conditional_logic": 0,
               "wrapper": {
@@ -3868,9 +3868,10 @@
                 "id": ""
               },
               "default_value": "",
-              "maxlength": "",
-              "rows": 3,
-              "new_lines": "br"
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
             },
             {
               "key": "field_overview_considerations_intro_text",
@@ -4152,6 +4153,26 @@
               "append": ""
             },
             {
+              "key": "field_nipple_reconstruction_show_divider_above",
+              "label": "Show Divider Above",
+              "name": "show_divider_above",
+              "aria-label": "",
+              "type": "true_false",
+              "instructions": "Enable this when the original HTML has a standalone divider block above this section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "message": "Render standalone divider above this section",
+              "default_value": 0,
+              "ui": 1,
+              "ui_on_text": "Shown",
+              "ui_off_text": "Hidden"
+            },
+            {
               "key": "field_nipple_reconstruction_highlight_text",
               "label": "Highlight Text",
               "name": "highlight_text",
@@ -4277,6 +4298,26 @@
               "placeholder": "Top Surgery Techniques That Preserve Nipple Sensation",
               "prepend": "",
               "append": ""
+            },
+            {
+              "key": "field_sensation_preservation_show_divider_above",
+              "label": "Show Divider Above",
+              "name": "show_divider_above",
+              "aria-label": "",
+              "type": "true_false",
+              "instructions": "Enable this when the original HTML has a standalone divider block above this section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "message": "Render standalone divider above this section",
+              "default_value": 0,
+              "ui": 1,
+              "ui_on_text": "Shown",
+              "ui_off_text": "Hidden"
             },
             {
               "key": "field_sensation_preservation_image_position",
@@ -5988,6 +6029,162 @@
           "min": "",
           "max": ""
         },
+        "layout_intro_callout_section": {
+          "key": "layout_intro_callout_section",
+          "name": "intro_callout_section",
+          "label": "Intro Callout Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_intro_callout_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_intro_callout_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the main section heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Double Incision Mastectomy",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_intro_callout_content",
+              "label": "Callout Content",
+              "name": "callout_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Enter the bordered introductory callout content. Use the Text tab if you need links or line breaks.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_compact_text_section": {
+          "key": "layout_compact_text_section",
+          "name": "compact_text_section",
+          "label": "Compact Text Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_compact_text_tab_content",
+              "label": "Content",
+              "name": "",
+              "aria-label": "",
+              "type": "tab",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "placement": "top",
+              "endpoint": 0,
+              "selected": 0
+            },
+            {
+              "key": "field_compact_text_show_divider_above",
+              "label": "Show Divider Above",
+              "name": "show_divider_above",
+              "aria-label": "",
+              "type": "true_false",
+              "instructions": "Enable this when the original HTML has a standalone divider block above this section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "message": "Render standalone divider above this section",
+              "default_value": 0,
+              "ui": 1,
+              "ui_on_text": "Shown",
+              "ui_off_text": "Hidden"
+            },
+            {
+              "key": "field_compact_text_heading",
+              "label": "Section Heading",
+              "name": "section_heading",
+              "aria-label": "",
+              "type": "text",
+              "instructions": "Enter the section heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "maxlength": "",
+              "placeholder": "Choosing the Appropriate Sensory Preservation Approach",
+              "prepend": "",
+              "append": ""
+            },
+            {
+              "key": "field_compact_text_body_content",
+              "label": "Body Content",
+              "name": "body_content",
+              "aria-label": "",
+              "type": "wysiwyg",
+              "instructions": "Enter the compact paragraph content shown below the heading.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "basic",
+              "media_upload": 0,
+              "delay": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
         "layout_soft_panel_content_section": {
           "key": "layout_soft_panel_content_section",
           "name": "soft_panel_content_section",
@@ -6601,6 +6798,26 @@
               "append": ""
             },
             {
+              "key": "field_surgery_techniques_section_show_divider_above",
+              "label": "Show Divider Above",
+              "name": "show_divider_above",
+              "aria-label": "",
+              "type": "true_false",
+              "instructions": "Enable this when the original HTML has a standalone divider block above this section.",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "message": "Render standalone divider above this section",
+              "default_value": 0,
+              "ui": 1,
+              "ui_on_text": "Shown",
+              "ui_off_text": "Hidden"
+            },
+            {
               "key": "field_surgery_techniques_section_intro_callout_content",
               "label": "Intro Callout Content",
               "name": "intro_callout_content",
@@ -6855,5 +7072,5 @@
   "description": "Flexible content page builder for creating custom page layouts. Build pages using modular, reusable content sections that can be arranged in any order to create unique page designs.",
   "show_in_rest": 0,
   "display_title": "",
-  "modified": 1775236900
+  "modified": 1775320400
 }

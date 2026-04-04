@@ -1571,18 +1571,17 @@ Screenshot:
 - add screenshot here
 
 Use this flexible content:
-- `Full Width Content Section`
+- `Intro Callout Section`
 
 What to fill in:
 - Section Heading
-- Callout Type: `Rich Callout With Links`
-- Linked / Rich Callout
+- Callout Content
 
 Notes:
 - use `Section Heading` = `Double Incision Mastectomy`
-- put both intro paragraphs into `Linked / Rich Callout`
+- put both intro paragraphs into `Callout Content`
 - keep the inline `top surgery` link in the callout content
-- leave Main Heading, Body Content, Secondary Content, Bottom Note, and CTA Content empty
+- this section owns the border between the intro and `Overview and General Considerations` via its original `b-divider` wrapper
 
 ### Section 3: Overview and General Considerations
 
@@ -1607,7 +1606,7 @@ What to fill in:
 Notes:
 - use `Section Heading` = `Overview and General Considerations`
 - put the top highlighted intro sentence in `Highlight Text`
-- keep the inline `top surgery` link in the callout content
+- keep the inline `top surgery` link in the callout content using the Text tab in `Highlight Text`
 - put `Double incision mastectomy is a low risk and safe operation.` in `Intro Text`
 - add the `Pros` bullets in `Pros Items`
 - add the `Cons` bullets in `Cons Items`
@@ -1751,17 +1750,16 @@ Screenshot:
 - add screenshot here
 
 Use this flexible content:
-- `Full Width Content Section`
+- `Intro Callout Section`
 
 What to fill in:
 - Section Heading
-- Callout Type: `Rich Callout With Links`
-- Linked / Rich Callout
+- Callout Content
 
 Notes:
 - use `Section Heading` = `Sensory Preservation Techniques For Gender Affirming Surgery`
-- put both intro paragraphs into `Linked / Rich Callout`
-- leave Main Heading, Body Content, Secondary Content, Bottom Note, and CTA Content empty
+- put both intro paragraphs into `Callout Content`
+- this section owns the border between Section 1 and Section 2 via its original `b-divider` wrapper
 
 ### Section 2: Top Surgery Techniques That Preserve Nipple Sensation
 
@@ -1774,6 +1772,7 @@ Use this flexible content:
 What to fill in:
 - Section Heading
 - Image Position: `Right`
+- Show Divider Above: `Hidden`
 - Highlight Text
 - Intro Content
 - List Heading
@@ -1807,6 +1806,7 @@ Use this flexible content:
 What to fill in:
 - Section Heading
 - Image Position: `Left`
+- Show Divider Above: `Shown`
 - Highlight Text
 - Intro Content
 - List Heading
@@ -1817,6 +1817,7 @@ What to fill in:
 
 Notes:
 - use `Section Heading` = `Targeted Nipple–Areola Complex Reinnervation (TNR)`
+- turn `Show Divider Above` on because the original HTML uses a standalone divider block between Section 2 and Section 3
 - put `A microsurgical nerve transposition technique performed at the time of double-incision top surgery` in `Highlight Text`
 - put the intro paragraph in `Intro Content`
 - use `List Heading` = `How Targeted Nipple Reinnervation Works`
@@ -1903,16 +1904,17 @@ Screenshot:
 - add screenshot here
 
 Use this flexible content:
-- `Full Width Content Section`
+- `Compact Text Section`
 
 What to fill in:
+- Show Divider Above: `Shown`
 - Section Heading
 - Body Content
 
 Notes:
+- turn `Show Divider Above` on because the original HTML uses a standalone divider block before this section
 - use `Section Heading` = `Choosing the Appropriate Sensory Preservation Approach`
 - put the two explanatory paragraphs in `Body Content`
-- leave Main Heading, intro/callout fields, Secondary Content, Bottom Note, and CTA Content empty
 
 ### Section 8: Additional Resources
 
@@ -1920,7 +1922,7 @@ Screenshot:
 - add screenshot here
 
 Use this flexible content:
-- `Heading + List Section`
+- `Compact Resources Section`
 
 What to fill in:
 - Section Heading

@@ -27,7 +27,7 @@ $bottom_content    = get_sub_field( 'bottom_content' );
 
 				<?php if ( $highlight_text ) : ?>
 					<div class="blockquote callout-accent mb-lg-5 mt-5">
-						<p class="mb-lg-5"><?php echo nl2br( esc_html( $highlight_text ) ); ?></p>
+						<div class="mb-lg-5"><?php echo wp_kses_post( $highlight_text ); ?></div>
 					</div>
 				<?php endif; ?>
 
