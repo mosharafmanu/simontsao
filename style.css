@@ -1162,6 +1162,7 @@ url("assets/images/Connections.webp") 2x);
 }
 @media (max-width: 767px)
 {
+
     .bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{
         padding-left:0;padding-right:0;
     }
@@ -1772,4 +1773,61 @@ url("assets/images/Breast.webp") 2x);
 
 .callout-list-section-container{
 	padding-top: 0;
+}
+
+/* hero_section */
+@media only screen and (max-width: 768px) {
+	/* Hero Section */
+	.hero-title {
+		padding-left: 0;
+	}
+	.hero-kicker,
+	.hero-summary {
+		padding: 0;
+	}
+
+	/* overview_section */
+	.overview_section picture img {
+		padding-bottom: 0;
+	}
+	.overview_section .bloc-sm-lg {
+		padding-top: 0;
+		padding-bottom: 20px;
+	}
+
+	/* request_appointment Section */
+	.section-light .bloc-lg {
+		padding-top: 10px;
+		padding-bottom: 50px;
+	}
+	.section-light .pt-5 {
+		padding-top: 20px !important;
+	}
+
+	/* additional_information_links section */
+	.additional_information_links .related-links br + br {
+		display: none;
+
+	}
+
+	/* About Page section-light */
+	.section-light .about-specialist-intro__content {
+		margin-top: 16px;
+	}
+	.section-light .mb-4.about-specialist-intro__links {
+		margin-top: -16px;
+		margin-bottom: 0 !important;
+	}
+	.section-light .mb-4.about-specialist-intro__links p {
+		margin-bottom: 0 !important;
+	}
+
+	/* Media Content Section */
+	.section-light .bloc-lg {
+		padding-top: 32px;
+	}
+
+
+
+
 }
