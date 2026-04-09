@@ -1775,6 +1775,7 @@ url("assets/images/Breast.webp") 2x);
 	padding-top: 0;
 }
 
+
 /* hero_section */
 @media only screen and (max-width: 768px) {
 	/* Hero Section */
@@ -1796,11 +1797,11 @@ url("assets/images/Breast.webp") 2x);
 	}
 
 	/* request_appointment Section */
-	.section-light .bloc-lg {
+	.request_appointment .bloc-lg {
 		padding-top: 10px;
-		padding-bottom: 50px;
+		padding-bottom: 30px;
 	}
-	.section-light .pt-5 {
+	.additional_information_links .pt-5 {
 		padding-top: 20px !important;
 	}
 
@@ -1811,23 +1812,60 @@ url("assets/images/Breast.webp") 2x);
 	}
 
 	/* About Page section-light */
-	.section-light .about-specialist-intro__content {
+	.about-specialist-intro__content {
 		margin-top: 16px;
 	}
-	.section-light .mb-4.about-specialist-intro__links {
+	.about_specialist_intro .mb-4.about-specialist-intro__links {
 		margin-top: -16px;
 		margin-bottom: 0 !important;
 	}
-	.section-light .mb-4.about-specialist-intro__links p {
-		margin-bottom: 0 !important;
+	.about_specialist_intro .mb-4.about-specialist-intro__links p {
+		margin-bottom: -30px !important;
 	}
 
 	/* Media Content Section */
-	.section-light .bloc-lg {
+	.media_content_section .bloc-lg {
 		padding-top: 32px;
+		padding-bottom: 32px;
 	}
 
+	/* about_affiliations Section */
+	.about_affiliations .bloc-lg {
+	padding: 0 !important;
+}
+	.about_affiliations .mb-5 {
+		margin-top: 1rem !important;
+		margin-bottom: 0rem !important;
+	}
+	.about_affiliations .container .order-1 > .row:first-of-type {
+		margin-top: -50px !important;
+	}
+	.about_affiliations .container .order-1 > .row:last-of-type {
+		margin-bottom: 0 !important;
+		padding-bottom: 0 !important;
+	}
 
+	/* Top Surgery Page */
+	.centered_intro_section .bloc-lg {
+		padding: 0 !important;
+	}
+	.centered_intro_section .bloc-lg .order-1 {
+		padding-bottom: 30px !important;
+	}
+	.centered_intro_section h5.pt-5 {
+		padding-top: 0 !important;
+	}
+	.reactive_card_content_section .bloc-lg {
+		padding: 30px !important;
+	}
+	.section-light .container.bloc-lg {
+		padding: 20px !important;
+	}
+	.section-light 	
 
+	.section-light .row .mb-5 {
+		margin-top: 1rem !important;
+		margin-bottom: 0rem !important;
+	}
 
 }
