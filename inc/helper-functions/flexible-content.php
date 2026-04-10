@@ -136,20 +136,24 @@ if ( ! function_exists( 'simontsao_add_flexible_layout_classes_to_markup' ) ) {
 			$section_markup  = substr( $section_markup, strlen( $matches[0] ) );
 		}
 
-		$updated_markup = preg_replace(
-			'/<div\b([^>]*)\bclass=(["\'])([^"\']*)(\2)([^>]*)>/i',
-			'<div$1class=$2$3 ' . $inspector_classes . '$4$5>',
-			$section_markup,
-			1
-		);
-
-		if ( null !== $updated_markup && $updated_markup !== $section_markup ) {
-			return $leading_markup . $updated_markup;
-		}
-
-		$updated_markup = preg_replace(
+		$updated_markup = preg_replace_callback(
 			'/<div\b([^>]*)>/i',
-			'<div$1 class="' . $inspector_classes . '">',
+			static function ( $matches ) use ( $inspector_classes ) {
+				$attributes = $matches[1];
+
+				if ( preg_match( '/\bclass=(["\'])([^"\']*)(\1)/i', $attributes, $class_matches ) ) {
+					$updated_attributes = preg_replace(
+						'/\bclass=(["\'])([^"\']*)(\1)/i',
+						'class=$1' . trim( $class_matches[2] . ' ' . $inspector_classes ) . '$3',
+						$attributes,
+						1
+					);
+
+					return '<div' . $updated_attributes . '>';
+				}
+
+				return '<div' . $attributes . ' class="' . $inspector_classes . '">';
+			},
 			$section_markup,
 			1
 		);
