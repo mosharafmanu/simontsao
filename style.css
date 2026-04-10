@@ -1858,7 +1858,7 @@ url("assets/images/Breast.webp") 2x);
 	.reactive_card_content_section .bloc-lg {
 		padding: 30px !important;
 	}
-	.section-light .container.bloc-lg {
+	/* .section-light .container.bloc-lg {
 		padding: 20px !important;
 	}
 	.section-light 	
@@ -1866,6 +1866,14 @@ url("assets/images/Breast.webp") 2x);
 	.section-light .row .mb-5 {
 		margin-top: 1rem !important;
 		margin-bottom: 0rem !important;
+	} */
+
+	/* Research Page */
+	.illustration_text_split_section .container.bloc-lg {
+		padding: 30px !important;
+	}
+	picture img{
+		padding-bottom: 0 !important;
 	}
 
 }
