@@ -127,25 +127,34 @@ if ( ! function_exists( 'simontsao_add_flexible_layout_classes_to_markup' ) ) {
 			return $markup;
 		}
 
+		$leading_markup  = '';
+		$section_markup  = $markup;
+		$divider_pattern = '/^\s*<div class="bloc section section-light d-sm-flex d-none">\s*<div class="container bloc-no-padding-lg bloc-sm-md bloc-no-padding">\s*<div class="row">\s*<div class="col text-left text-sm-left">\s*<div class="divider-h divider-0-background-color d-sm-block d-none"><\/div>\s*<\/div>\s*<\/div>\s*<\/div>\s*<\/div>\s*/';
+
+		while ( preg_match( $divider_pattern, $section_markup, $matches ) ) {
+			$leading_markup .= $matches[0];
+			$section_markup  = substr( $section_markup, strlen( $matches[0] ) );
+		}
+
 		$updated_markup = preg_replace(
 			'/<div\b([^>]*)\bclass=(["\'])([^"\']*)(\2)([^>]*)>/i',
 			'<div$1class=$2$3 ' . $inspector_classes . '$4$5>',
-			$markup,
+			$section_markup,
 			1
 		);
 
-		if ( null !== $updated_markup && $updated_markup !== $markup ) {
-			return $updated_markup;
+		if ( null !== $updated_markup && $updated_markup !== $section_markup ) {
+			return $leading_markup . $updated_markup;
 		}
 
 		$updated_markup = preg_replace(
 			'/<div\b([^>]*)>/i',
 			'<div$1 class="' . $inspector_classes . '">',
-			$markup,
+			$section_markup,
 			1
 		);
 
-		return null !== $updated_markup ? $updated_markup : $markup;
+		return null !== $updated_markup ? $leading_markup . $updated_markup : $markup;
 	}
 }
 
