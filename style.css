@@ -1799,7 +1799,7 @@ url("assets/images/Breast.webp") 2x);
 	/* request_appointment Section */
 	.request_appointment .bloc-lg {
 		padding-top: 10px;
-		padding-bottom: 30px;
+		padding-bottom: 50px;
 	}
 	.additional_information_links .pt-5 {
 		padding-top: 20px !important;
@@ -1812,6 +1812,9 @@ url("assets/images/Breast.webp") 2x);
 	}
 
 	/* About Page section-light */
+	.about_specialist_intro .bloc-lg {
+		padding: 60px 20px;
+	}
 	.about-specialist-intro__content {
 		margin-top: 16px;
 	}
@@ -1847,7 +1850,8 @@ url("assets/images/Breast.webp") 2x);
 
 	/* Top Surgery Page */
 	.centered_intro_section .bloc-lg {
-		padding: 0 !important;
+		padding-top: 50px !important;
+		padding-bottom: 0;
 	}
 	.centered_intro_section .bloc-lg .order-1 {
 		padding-bottom: 30px !important;
@@ -1858,15 +1862,31 @@ url("assets/images/Breast.webp") 2x);
 	.reactive_card_content_section .bloc-lg {
 		padding: 30px !important;
 	}
-	/* .section-light .container.bloc-lg {
-		padding: 20px !important;
+	.quote_content_section .bloc-lg {
+		padding: 20px 20px;
 	}
-	.section-light 	
-
-	.section-light .row .mb-5 {
-		margin-top: 1rem !important;
-		margin-bottom: 0rem !important;
-	} */
+	.quote_content_section .order-1 .pt-5, .py-5 {
+		padding-top: 16px !important;
+	}
+	/* heading_intro_card_grid */
+	.heading_intro_card_grid .bloc-lg {
+		padding: 20px 20px;
+	}
+	.order-1 .pt-5{
+		padding-top: 16px !important;
+	}
+	.heading_intro_card_grid .row .mt-5 {
+		margin-top: 16px !important;
+	}
+	.reactive_card_content_section .row .pt-5 {
+		padding-top: 0 !important;
+	}
+	.heading_intro_list_cta_section .bloc-lg {
+		padding: 0 20px;
+	}
+	.heading_list_section .bloc-lg {
+		padding: 16px 20px;
+	}
 
 	/* Research Page */
 	.illustration_text_split_section .container.bloc-lg {
@@ -1875,5 +1895,86 @@ url("assets/images/Breast.webp") 2x);
 	picture img{
 		padding-bottom: 0 !important;
 	}
+
+	.inner-hero__container.bloc-xxl {
+		padding: 100px 20px;
+	}
+
+	/* patient_journey_step_section" */
+	.patient_journey_step_section .row .order-sm-2 {
+		padding-top: 30px;
+	}
+	.full_width_content_section .row .order-sm-2 .full-width-content-section__bottom-note.pt-5{
+		padding-top: 0 !important;
+	}
+	/* Contact Us Page */
+	.team_profile_section .bloc-md {
+		padding-bottom: 0;
+	}
+
+	/* Breast Cancer */
+	.illustration_text_split_section .row .order-2 .mt-5 {
+		margin-top: 20px !important;
+	}
+
+	.full_width_content_section .bloc-sm {
+		padding-top: 50px;
+	}
+	.illustration_text_split_section .bloc-sm {
+		padding-top: 0 !important;
+	}
+	
+	/* Breast Surgery Recovery */
+	.recovery_guide_section .bloc-lg {
+		padding: 20px 20px;
+	}
+	.recovery_info_section .bloc-lg {
+		padding-top: 30px;
+		padding-bottom: 0;
+	}
+	.recovery_info_section .row .mb-5, .my-5 {
+		margin-bottom: 0 !important;
+	}
+	.extended_illustration_content_section .bloc-lg {
+		padding: 30px 20px;
+	}
+	.extended_illustration_content_section .row .mt-5, .my-5 {
+		margin-top: 20px !important;
+	}
+	.full_width_image_highlighted_list_section .bloc-lg {
+		padding: 30px 20px;
+	}
+	.hero-title {
+		text-align: center;
+	}
+
+	/* Double Incision Mastectomy page */
+	.intro_callout_section .bloc-lg,
+	.overview_considerations_section .bloc-lg,
+	.surgery_techniques_section .bloc-lg,
+	.nipple_reconstruction_section .bloc-lg {
+		padding-top: 30px;
+		padding-bottom: 0;
+	}
+
+
+	.intro_callout_section .order-1,
+	.surgery_techniques_section .row .order-sm-1 {
+		margin-bottom: 30px;
+	}
+	.surgery_techniques_section .row .order-1 .mb-5, .my-5 {
+		margin-bottom: 0 !important;
+	}
+
+
+
+
+
+
+
+
+
+
+
 
 }
