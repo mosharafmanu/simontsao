@@ -1947,13 +1947,15 @@ url("assets/images/Breast.webp") 2x);
 		margin-bottom: 0 !important;
 	}
 	.extended_illustration_content_section .bloc-lg {
-		padding: 30px 20px;
+		padding-top: 30px;
+		padding-bottom: 0;
 	}
 	.extended_illustration_content_section .row .mt-5, .my-5 {
 		margin-top: 20px !important;
 	}
 	.full_width_image_highlighted_list_section .bloc-lg {
-		padding: 30px 20px;
+		padding-top: 30px;
+		padding-bottom: 0 !important;
 	}
 	.hero-title {
 		text-align: center;
@@ -1971,17 +1973,42 @@ url("assets/images/Breast.webp") 2x);
 
 	.intro_callout_section .order-1,
 	.surgery_techniques_section .row .order-sm-1 {
+		margin-top: 20px !important;
 		margin-bottom: 30px;
 	}
 	.surgery_techniques_section .row .order-1 .mb-5, .my-5 {
-		margin-bottom: 0 !important;
+		margin-bottom: 10px !important;
 	}
 
 	.cancer_journey_timeline_section .bloc-lg {
 		padding-top: 50px;
 		padding-bottom: 50px;
 	}
-
+	.cancer_journey_timeline_section .row .content-column {
+		padding-top: 30px;
+		padding-bottom: 0;
+	}
+	.full_width_image_highlighted_list_section .row .mt-5, .my-5 {
+		margin-top: 0 !important;
+	}
+	.sensation_preservation_overview_section .bloc-lg {
+		padding-top: 30px;
+		padding-bottom: 0;
+	}
+	.soft_panel_content_section .bloc-lg {
+		padding-top: 30px;
+		padding-bottom: 0 !important;
+	}
+	.soft_panel_content_section .row .mt-5 {
+		margin-top: -30px !important;
+	}
+	.compact_text_section .bloc-sm {
+		padding-top: 20px;
+		padding-bottom: 0 !important;
+	}
+	.compact_resources_section .row .mb-5{
+		margin-bottom: 0 !important;
+	}
 
 
 
